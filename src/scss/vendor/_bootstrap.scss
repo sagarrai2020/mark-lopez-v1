@@ -1,0 +1,23 @@
+// Bootstrap Reset
+
+//== font-family
+$font-family-base: "Montserrat",  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// == button border radius
+$btn-border-radius: 1.5rem;
+
+// == link color
+$link-color: #6c757d;
+
+// == link hover color
+$link-hover-color: #17a2b8;
+
+// == link hover decoration
+$link-hover-decoration: none;
+
+// == h1, h2, h3, h4, h5, h6 (font-weight, color)
+$headings-font-weight: 600;
+$headings-color: #6c757d;
+
+// import all bootstrap scss files from installed location (node_modules)
+@import "~bootstrap/scss/bootstrap";

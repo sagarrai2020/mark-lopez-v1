@@ -1,0 +1,73 @@
+// .contact {
+//     background: $primary;
+//     padding: 100px 0;
+//     line-height: 2rem;
+
+//     //h1
+//     h1 {
+//         margin-bottom: 2rem;
+//         color:  $dark;
+//         //after
+//         &::after {
+//             content: '';
+//             display: block;
+//             width: 57px;
+//             height: 2px;
+//             background: $dark;
+//             margin-top: 20px;
+//         }
+//     } 
+
+//     //== p
+//     p {
+//         font-size: 0.9rem;
+//     }
+    
+
+//     //card
+//     .card {
+//         flex-direction: row;
+//         background: $dark;
+//         color: $primary;
+//         margin-top: 2rem;
+//         height: 200px;
+//         cursor: pointer;
+
+//         //icon, contact-detail
+//         .icon, .contact-detail {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             width: 100%;
+//             height: 200px;
+//             align-items: center;
+//             border-radius: 4px;
+
+//         }
+
+//         //icon
+//         .icon {
+//             font-size: 3rem;
+//             background: $dark;
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             transition: all .3s ease-in-out;
+
+//         }
+
+//         //icon active
+//         .icon-active {
+//             transform: translateY(100%);
+//             opacity: 0;
+//         }
+
+//         //h2
+//         h2 {
+//             color: $white;
+//             font-size: 1.2rem;
+//         }
+
+//     }
+    
+// }

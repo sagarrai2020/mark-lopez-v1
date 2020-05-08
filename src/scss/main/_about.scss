@@ -1,0 +1,195 @@
+// // ============================= about ==================================
+// .about {
+//     position: relative;
+//     z-index: 1; 
+//     padding: 100px 0;
+//     background: #fff;
+//     line-height: 2rem;
+
+//     //about intro
+
+
+//     //== h1
+//     h2, h3, p {
+//         margin-bottom: 2rem;
+//     }
+
+//     //== h1 
+//     h1 {
+//         margin-bottom: 2rem;
+//         //after
+//         &::after {
+//             content: '';
+//             display: block;
+//             width: 55px;
+//             height: 2px;
+//             background: $primary;
+//             margin-top: 20px;
+//         }
+//     }
+    
+
+//     //== h2
+//     h2 {
+//         font-size: 1.5rem;
+//     }
+
+//     //== h3
+//     h3 {
+//         font-size: 1rem;
+//     }
+
+//     //== p
+//     p {
+//         font-size: 0.9rem;
+//     }
+
+//     //== ul
+//     ul {
+//         padding-left: 2rem;
+//         margin-bottom: 1.5rem;
+//         list-style: none;
+//         //== li 
+//         li {
+//             position: relative;
+//             //marker
+//             &::before {
+//                 // content: '\f069';
+//                 font-family: 'Font Awesome 5 Free';
+//                 font-weight: 900;
+//                 position: absolute;
+//                 transform: translateX(-30px) translateY(-7px);
+//                 color: $icon2;
+
+//             }
+
+//             //list first child
+//             &:nth-child(1)::before {
+//                 content: '\f044';
+
+//             }
+        
+//             //list second child
+//             &:nth-child(2)::before {
+//                 content: '\f24d';
+
+//             }
+
+//             //list third child
+//             &:nth-child(3)::before{
+//                 content: '\f121';
+
+//             }
+
+//             //list fourth child
+//             &:nth-child(4)::before {
+//                 content: '\f233';
+
+//             }
+
+//             //list fifth child
+//             &:nth-child(5)::before {
+//                 content: '\f002';
+
+//             }
+
+//             //list sixth child
+//             &:nth-child(6)::before {
+//                 content: '\f188';
+
+//             }
+
+//             //list seventh child
+//             &:nth-child(7)::before {
+//                 content: '\f2b5';
+
+//             }   
+
+//             //list eighth child
+//             &:nth-child(8)::before {
+//                 content: '\f4c4';
+
+//             }   
+
+//             //list ninth child
+//             &:nth-child(9)::before {
+//                 content: '\f508';
+
+//             }         
+
+//         }
+
+//     }        
+
+//     // icon1
+//     .icon1{
+//         color: $icon2;
+        
+//     }        
+
+//     // icon1
+//     .icon2 {
+//         color: $primary;
+        
+//     }
+    
+
+//     // skills 
+//     .skills {
+//         font-size: 0.9rem;
+//         background: $white;
+
+//         //skill 
+//         .skill {            
+//             width: 90%;
+//         }
+
+//         //skill-name
+//         .skill-name {
+//             margin: 20px 0;
+//         }
+//         //skill-bar
+//         .skill-bar {
+//             height: 3px;
+//             background:#ccc;
+//             border-radius: 8px;
+//         }
+//         //skill-per
+//         .skill-per {
+//             height: 3px;
+//             background: $primary;
+//             border-radius: 8px;
+//             width: 10%;
+//             position: relative;
+//             transition: 3s ease;
+//             //before
+//             &::before {
+//                 content: attr(data-text);
+//                 position: absolute;
+//                 padding: 0px 6px;
+//                 background-color:  $primary;
+//                 border: 1px solid  $primary;
+                
+//                 // font-size: 0.8rem;
+//                 color: #fff;
+//                 border-radius: 6px;
+//                 top: -42px;
+//                 right: 0;
+//                 transform: translateX(50%);
+//             }
+//             //after
+//             &::after {
+//                 content: '';
+//                 position: absolute;
+//                 width: 10px;
+//                 height: 10px;
+//                 background-color: $primary;
+//                 top: -14px;
+//                 right: 0;
+//                 transform: translateX(50%) rotate(45deg);
+
+//             }
+//         }
+//     }
+// }
+// // ============================= about END ===============================

@@ -1,0 +1,29 @@
+/*-----------------------------------------------------------
+* Author           : raitheme
+* Template Name    : raisagar - Personal Portfolio Html5 Template
+* Version          : 1.0
+* File Description : Main css file of the template
+*------------------------------------------------------------
+*/
+
+// custom color variables
+$primary:#17a2b8;
+$primary-light:#2ccde6;
+$dark:#000;
+$dark-light:#6c757d;
+$icon:#ddb91a;
+$icon2:#e83e8c;
+$white:#fff;
+
+
+// import scss modules
+@import "./body";
+@import "./preloader";
+@import "./header";
+@import "./home";
+@import "./about";
+@import "./services";
+@import "./projects";
+@import "./contact";
+@import "./footer";
+@import "./animate";
