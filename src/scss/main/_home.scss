@@ -19,7 +19,7 @@
         // small screen
         @media  only screen and (max-width: 992px) {
             width: 100%;
-            height: 45vh;
+            height: 50vh;
             justify-content: flex-end; 
             align-items: center;     
         }
@@ -30,7 +30,7 @@
             color: #6c757d;
             font-size: 3.5rem;
             text-transform: uppercase;
-            padding-bottom: 0.5rem;
+            padding-bottom: 1rem;
             margin: 0;
             // small screen
             @media  only screen and (max-width: 992px) {
@@ -44,7 +44,7 @@
 
         //p
         p {
-            padding-bottom:  0.5rem;
+            padding-bottom:  1rem;
             margin: 0;
         }
         p:first-child{
@@ -75,7 +75,7 @@
         // == small screen
         @media  only screen and (max-width: 992px) {
             width: 100%;
-            height: 55vh;
+            height: 50vh;
         }
 
         // == small screen
