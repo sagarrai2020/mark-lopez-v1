@@ -186,20 +186,20 @@ header {
                     .nav-link {
                         padding: 0.5rem 0rem 0.5rem 2rem;
                         text-transform: uppercase;
-                        color:  $primary;
+                        color:  $dark;
 
                         @media  only screen and (max-width: 992px) {  
                             padding: 0;
                         }
                         //nav link hover color
                         &:hover {
-                            color:$dark;
+                            color:$dark-light;
                         }
                     }
                     
                     //for scroll spy 
                     .active {
-                        color: $dark;
+                        color: $primary;
                         
                         //after 
                         &::after {
