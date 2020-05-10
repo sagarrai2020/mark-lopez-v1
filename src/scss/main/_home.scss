@@ -1,94 +1,95 @@
-// // ============================= home ======================================
-// .home {  
-//     //background color
-//     background: linear-gradient(45deg, #ccc, #fff);
-//     // == smalle screen
-//     @media  only screen and (max-width: 992px) {
-//         // == home-inner
-//         .home-inner {
-//             flex-direction: column;
-//         }
-//     }
-//     // == intro 
-//     .intro {
-//         width: 50%;
-//         height: 100vh;
-//         justify-content: center;
-//         // == small screen
-//         @media  only screen and (max-width: 992px) {
-//             width: 100%;
-//             height: 50vh;
-//             justify-content: flex-end; 
-//             align-items: center;           
-//         }
-       
-//         // == intro h1
-//         h1 {
-//             font-weight: 800;
-//             color: #6c757d;
-//             font-size: 4.5rem;
-//             text-transform: uppercase;
-//             margin-bottom: 1rem;
-//             // == small screen intro h1
-//             @media  only screen and (max-width: 992px) {
-//                 font-size: 3.5rem;
-//             } 
-//             // == small screen intro h1
-//             @media  only screen and (max-width: 768px) {
-//                 font-size: 3rem;
-//             }  
-//             // == small screen intro h1
-//             @media  only screen and (max-width: 576px) {
-//                 font-size: 2.5rem;
-//             }   
-//             // == small screen intro h1
-//             @media  only screen and (max-width: 500px) {
-//                 font-size: 2rem;
-//             } 
-//         }      
-
-//         //p
-//         p {
-//             margin-bottom: 1rem;
-//         }
-//         p:first-child{
-//             letter-spacing: .5rem;
-//         }
-
-//         //== intro a link
-//         a {
-//             margin-top: 1rem;
-//             padding: 10px 30px;
-//         }
-//     }
-
-//     // == home-pic 
-//     .home-pic {
-//         width: 50%;
-//         height: 100vh;
-//         background: url("../../img/rai-sagar.png") no-repeat center bottom;
-//         background-size: contain;
-//         // background-repeat: no-repeat;
-//         // background-position: center bottom;
-
-//         // == small screen
-//         @media  only screen and (max-width: 992px) {
-//             width: 100%;
-//             height: 50vh;
-//         }
-
-//         // == small screen
-//         @media (max-width: 768px) {
-//             background: url("../../img/rai-sagar-888.png") no-repeat center bottom;
-//             background-size: contain;
-//         }
-
-//         // == small screen
-//         @media (max-width: 576px) {
-//             background: url("../../img/rai-sagar-592.png") no-repeat center bottom;
-//             background-size: contain;
-//         }
-//     }
+// ============================= home ======================================
+.home {  
+    //background color
+    background: linear-gradient(90deg, #fff, rgb(203, 209, 214));
     
-// }
-// // ============================= home END ==================================
+    // small screen
+    @media  only screen and (max-width: 992px) {
+        // == home-inner
+        .home-inner {
+            flex-direction: column;
+        }
+    }
+
+    // intro 
+    .intro {
+        width: 50%;
+        height: 100vh;
+        justify-content: center;
+        // small screen
+        @media  only screen and (max-width: 992px) {
+            width: 100%;
+            height: 50vh;
+            justify-content: flex-end; 
+            align-items: center;     
+        }
+       
+        // intro h1
+        h1 {
+            font-weight: 800;
+            color: #6c757d;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            padding-bottom: 0.5rem;
+            margin: 0;
+            // small screen
+            @media  only screen and (max-width: 992px) {
+                font-size: 3rem;
+            }   
+            // small screen
+            @media  only screen and (max-width: 500px) {
+                font-size: 2rem;
+            } 
+        }      
+
+        //p
+        p {
+            padding-bottom:  0.5rem;
+            margin: 0;
+        }
+        p:first-child{
+            letter-spacing: 0.5rem;
+        }
+
+        //== intro a link
+        a {
+            margin-top: 1rem;
+            padding: 10px 30px;   
+            // small screen
+            @media  only screen and (max-width: 500px) {
+                
+                margin-top: 0.5rem;
+            } 
+        }
+    }
+
+    // == home-pic 
+    .home-pic {
+        width: 50%;
+        height: 100vh;
+        background: url("../../img/mark-desktops.png") no-repeat center bottom;
+        background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position: center bottom;
+
+        // == small screen
+        @media  only screen and (max-width: 992px) {
+            width: 100%;
+            height: 50vh;
+        }
+
+        // == small screen
+        @media (max-width: 768px) {
+            background: url("../../img/mark-tablets.png") no-repeat center bottom;
+            background-size: contain;
+        }
+
+        // == small screen
+        @media (max-width: 576px) {
+            background: url("../../img/mark-phones.png") no-repeat center bottom;
+            background-size: contain;
+        }
+    }
+    
+}
+// ============================= home END ==================================

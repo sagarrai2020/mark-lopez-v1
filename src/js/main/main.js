@@ -1,3 +1,18 @@
+(function($) {
+    'use strict';
+
+
+    //scroll spy to change nav link color when scroll rich to the cotent div
+    $('body').scrollspy({
+        target: '.nav-container',
+        offset: 100
+    });
+
+
+
+
+})(jQuery);
+
 
 // (function($) {
 
@@ -34,103 +49,103 @@
 //         $(this).scrollTop(0); 
         
 
-//         /*-------------------------------------------------------------------------*
-//          *             02. change Header background on scroll                         *
-//          *-------------------------------------------------------------------------*/
-//                     $(window).on('scroll', function () {
-//                         var header = $('header');
-//                         if ($(window).scrollTop() > 100) {
-//                             header.addClass('bg-white shadow-sm');
-//                         } else {
-//                             header.removeClass('bg-white shadow-sm');
-//                         }
-//                     }); // $(window).on('scroll' end
+        /*-------------------------------------------------------------------------*
+         *             02. change Header background on scroll                         *
+         *-------------------------------------------------------------------------*/
+                    $(window).on('scroll', function () {
+                        var header = $('header');
+                        if ($(window).scrollTop() > 100) {
+                            header.addClass('bg-white shadow-sm');
+                        } else {
+                            header.removeClass('bg-white shadow-sm');
+                        }
+                    }); // $(window).on('scroll' end
                         
     
-//         /*--------------------------------------------------------------------------------------------*
-//          *          03. (SMALL SCREEN) Burger icon open/close AND Navigation menu slide in/out                                *
-//          *---------------------------------------------------------------------------------------------*/
+        /*--------------------------------------------------------------------------------------------*
+         *          03. (SMALL SCREEN) Burger icon open/close AND Navigation menu slide in/out                                *
+         *---------------------------------------------------------------------------------------------*/
         
-//                 $(".burger-container").on("click", function () {                    
-//                     //Burger icon open/close
-//                     burgerIconToggle();
-//                     //Navigation menu slide in/out
-//                     navToggle();
-//                 });
+                $(".burger-container").on("click", function () {                    
+                    //Burger icon open/close
+                    burgerIconToggle();
+                    //Navigation menu slide in/out
+                    navToggle();
+                });
 
-//                 //Burger icon open/close
-//                 function burgerIconToggle() {
-//                     $(".burger-menu-icon").toggleClass("active-burger-menu-icon");
-//                 }
+                //Burger icon open/close
+                function burgerIconToggle() {
+                    $(".burger-menu-icon").toggleClass("active-burger-menu-icon");
+                }
         
-//                 //Navigation menu slide in/out
-//                 function navToggle() {
-//                     //element
-//                     var $this = $(".nav-container");
-//                     var $thisList = $(".nav-container li");   
-//                     //check class             
-//                     var isSlideIn = $this.hasClass("slideInRight");
-//                     //condition
-//                     if (isSlideIn){
-//                         $this.addClass("slideOutRight");
-//                         $this.removeClass("slideInRight");
-//                         //animate nav list item
-//                         $thisList.each(function(){
-//                             $(this).removeClass(" slideInRight");
-//                         });           
-//                     }else{
-//                         $this.removeClass("slideOutRight");
-//                         $this.addClass("slideInRight");
-//                         //animate list item
-//                         $thisList.each(function(index, elem){
-//                             var animationDelay = "."+index+"s";
-//                             $(elem).addClass(" slideInRight");
-//                             $(elem).css("animation-delay", animationDelay);
-//                         });
-//                     }
+                //Navigation menu slide in/out
+                function navToggle() {
+                    //element
+                    var $this = $(".nav-container");
+                    var $thisList = $(".nav-item");   
+                    //check class             
+                    var isSlideIn = $this.hasClass("slideInRight");
+                    //condition
+                    if (isSlideIn){
+                        $this.addClass("slideOutRight");
+                        $this.removeClass("slideInRight");
+                        //animate nav list item
+                        $thisList.each(function(){
+                            $(this).removeClass(" slideInRight");
+                        });           
+                    }else{
+                        $this.removeClass("slideOutRight");
+                        $this.addClass("slideInRight");
+                        //animate list item
+                        $thisList.each(function(index, elem){
+                            var animationDelay = "."+index+"s";
+                            $(elem).addClass(" slideInRight");
+                            $(elem).css("animation-delay", animationDelay);
+                        });
+                    }
                     
-//                     // //add basic slidein/out classe to the element
-//                     $this.addClass("active-nav-container ");
-//                     $this.toggleClass("nav-container-border");
-//                     $thisList.addClass("active-li");
+                    // //add basic slidein/out classe to the element
+                    $this.addClass("active-nav-container ");
+                    $this.toggleClass("nav-container-border");
+                    $thisList.addClass("active-nav-item");
                 
-//                 }
+                }
                 
-//                 // Close navbar even when click on navbar links or outside of navbar while navbar is on open state
-//                 $("section, header a").on("click", function () {
-//                     //selector
-//                     var $this = $(".nav-container");       
-//                     // var $thisList = $(".nav-container li");
-//                     //check if nav is opened
-//                     var isNavOpen = $this.hasClass("slideInRight");
-//                     //condition
-//                     if(isNavOpen) {
-//                         burgerIconToggle();
-//                         navToggle();
-//                     }       
-//                 });
+                // Close navbar even when click on navbar links or outside of navbar while navbar is on open state
+                $("section, .nav-link").on("click", function () {
+                    //selector
+                    var $this = $(".nav-container");       
+                    // var $thisList = $(".nav-container li");
+                    //check if nav is opened
+                    var isNavOpen = $this.hasClass("slideInRight");
+                    //condition
+                    if(isNavOpen) {
+                        burgerIconToggle();
+                        navToggle();
+                    }       
+                });
                            
     
-//         /*-------------------------------------------------------------------------*
-//          *       04. Smooth scroll to anchor                                       *
-//          *-------------------------------------------------------------------------*/
-//                 // Add smooth scrolling to all links except collapse link
-//                 $("a:not([href='#carouselControls'])").on('click', function(event) {
-//                     // condition
-//                     if (this.hash !== "") {
-//                         // Prevent default anchor click behavior
-//                         event.preventDefault();
-//                         // Store hash
-//                         var hash = this.hash;
-//                         // The number (600) specifies the number of milliseconds it takes to scroll to the specified area
-//                         $('html, body').animate({
-//                             scrollTop: $(hash).offset().top
-//                         }, 600, function(){
-//                             // Add hash value to URL when done scrolling (default click behavior)
-//                             window.location = hash;     
-//                         });
-//                     }
-//                 });   
+        /*-------------------------------------------------------------------------*
+         *       04. Smooth scroll to anchor                                       *
+         *-------------------------------------------------------------------------*/
+                // Add smooth scrolling to all links except collapse link
+                $("a.nav-link").on('click', function(event) {
+                    // condition
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // The number (600) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 600, function(){
+                            // Add hash value to URL when done scrolling (default click behavior)
+                            window.location = hash;     
+                        });
+                    }
+                });   
 
                 
 //         /*---------------------------------------------------------------------------------------------------------------------------*
