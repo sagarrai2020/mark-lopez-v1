@@ -7,19 +7,19 @@ $font-family-base: "Montserrat",  "Segoe UI", Roboto, "Helvetica Neue", Arial, "
 $btn-border-radius: 1.5rem;
 
 // == link color
-$link-color: #6c757d;
+$link-color: rgb(108, 117, 125);
 
 // == link hover color
-$link-hover-color: #17a2b8;
+$link-hover-color: rgb(23, 162, 184);
 
 // == link hover decoration
 $link-hover-decoration: none;
 
 // == h1, h2, h3, h4, h5, h6 (font-weight, color)
 $headings-font-weight: 600;
-$headings-color: #6c757d;
+$headings-color: rgb(108, 117, 125);
 
-$primary: #2e405d;
+$primary: rgb(46, 64, 93);
 
 // import all bootstrap scss files from installed location (node_modules)
 @import "~bootstrap/scss/bootstrap";
