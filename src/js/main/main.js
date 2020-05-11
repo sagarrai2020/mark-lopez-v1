@@ -156,11 +156,11 @@
                                             }
                                         });   
                                         //content reveal
-                                        $("#about li.animated").each(function(){
-                                            if (isScrolledIntoView($(this)) === true) {
-                                                $(this).addClass("slideInUp");                                
-                                            }
-                                        }); 
+                                        // $("#about li.animated").each(function(){
+                                        //     if (isScrolledIntoView($(this)) === true) {
+                                        //         $(this).addClass("slideInUp");                                
+                                        //     }
+                                        // }); 
 
                                         // skills progress bar animation
                                         $(".skill .skill-per").each(function(){
@@ -171,14 +171,14 @@
                                             }
                                         });
 
-//                     // SERVICES section
-//                         // content reveal
-//                         $("#services .animated").each(function(){
-//                             if (isScrolledIntoView($(this)) === true) {
+                                        // SERVICES section
+                                            // content reveal
+                                            $("#services .animated").each(function(){
+                                                if (isScrolledIntoView($(this)) === true) {
 
-//                                 $(this).addClass(" slideInUp slow")
-//                             }
-//                         });
+                                                    $(this).addClass(" slideInUp slow")
+                                                }
+                                            });
 
 //                     // PROJECTS section
 //                         $(".projects h2").each(function(){

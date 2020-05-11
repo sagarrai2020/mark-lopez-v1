@@ -1,23 +1,12 @@
 .services {
     position: relative;
     padding: 100px 0;
-
-    //services::before
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right:0;
-        z-index: -1;
-        background:linear-gradient(175deg, $primary 55%, #efefef 0%);
-    }
+    background: $gray-200;
 
     //h1
     h1 {
-        margin-bottom: 2rem;
         font-size: 2rem;
+        text-align: center;
         //after
         &::after {
             content: '';
@@ -25,7 +14,31 @@
             width: 55px;
             height: 2px;
             background: $primary;
-            margin-top: 20px;
+            margin: 20px auto;
+        }
+    }
+       
+    
+    //card
+    .card {
+        margin-top: 1rem;
+        text-align: center;
+
+        //fontawesome icon
+        .fas{   
+            color: $primary;    
+            margin: 1rem 0 2rem 0;  
+            font-size: 5rem;
+        } 
+
+        //h2
+        .card-title h2 {
+            font-size: 1rem;
+        }
+
+        //p
+        .card-text {
+            font-size: 0.9rem;
         }
     }
 }
