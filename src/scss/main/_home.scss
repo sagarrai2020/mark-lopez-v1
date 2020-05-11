@@ -5,7 +5,7 @@
     
     // small screen
     @media  only screen and (max-width: 992px) {
-        // == home-inner
+        // home-inner
         .home-inner {
             flex-direction: column;
         }
@@ -47,11 +47,12 @@
             padding-bottom:  1rem;
             margin: 0;
         }
+        //first p element inside intro div
         p:first-child{
             letter-spacing: 0.5rem;
         }
 
-        //== intro a link
+        //intro a link
         a {
             margin-top: 1rem;
             padding: 10px 30px;   
@@ -67,7 +68,7 @@
     .home-pic {
         width: 50%;
         height: 100vh;
-        background: url("../../img/mark-desktops.png") no-repeat center bottom;
+        background: url("../img/mark-desktops.png") no-repeat center bottom;
         background-size: contain;
         // background-repeat: no-repeat;
         // background-position: center bottom;
@@ -80,13 +81,13 @@
 
         // == small screen
         @media (max-width: 768px) {
-            background: url("../../img/mark-tablets.png") no-repeat center bottom;
+            background: url("../img/mark-tablets.png") no-repeat center bottom;
             background-size: contain;
         }
 
         // == small screen
         @media (max-width: 576px) {
-            background: url("../../img/mark-phones.png") no-repeat center bottom;
+            background: url("../img/mark-phones.png") no-repeat center bottom;
             background-size: contain;
         }
     }

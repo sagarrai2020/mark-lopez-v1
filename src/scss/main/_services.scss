@@ -1,3 +1,37 @@
+.services {
+    position: relative;
+    padding: 100px 0;
+
+    //services::before
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right:0;
+        z-index: -1;
+        background:linear-gradient(175deg, $primary 55%, #efefef 0%);
+    }
+
+    //h1
+    h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        //after
+        &::after {
+            content: '';
+            display: block;
+            width: 55px;
+            height: 2px;
+            background: $primary;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
 // .services {
 //     background: linear-gradient(45deg, #ccc, #fff);
 //     line-height: 2rem;

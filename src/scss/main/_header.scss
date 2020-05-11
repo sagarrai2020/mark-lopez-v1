@@ -13,7 +13,7 @@ header {
             margin-right: auto; //important for ie
                 //span
                 span:first-child {
-                    color: $dark-light;
+                    color: $secondary;
                     }
 
         }
@@ -26,12 +26,12 @@ header {
             padding: 10px;
             margin-left: auto; //important for ie
             display: none;
-            // == small screen show burger container
+            // small screen show burger container
             @media  only screen and (max-width: 992px) {
                 display: block;
             }
 
-            // == burger menu line
+            // burger menu line
             .burger-menu-icon {
                 // display: block;
                 position: relative;
@@ -39,11 +39,11 @@ header {
                 height: 2px;
                 width: 15px;
                 border-radius: 4px;
-                // === initial animation setup when closed
+                // initial animation setup closed state
                 animation: closedMid 0.5s backwards;
                 animation-direction: reverse;
 
-                // == before, after
+                // before, after
                 &::before, &::after {
                     content: '';
                     position: absolute;
@@ -53,66 +53,20 @@ header {
                     background: #000;                        
                 }
 
-                // == before
+                // before
                 &::before {
                     transform: translateY(-5px);
-                    //initial animation setup when closed
-                    animation: closedTop 0.3s backwards;
+                    //initial animation setup closed state
+                    animation: closedTop 0.5s backwards;
                     animation-direction: reverse;         
                 }
 
-                // == after
+                // after
                 &::after {
                     transform: translateY(5px);
-                    //initial animation setup when closed
-                    animation: closedTop 0.3s backwards;
+                    //initial animation setup closed state
+                    animation: closedTop 0.5s backwards;
                     animation-direction: reverse;                       
-                }
-
-            }
-
-            // == active-burger-menu-icon
-            .active-burger-menu-icon {
-                background: #000;
-                //middle line
-                animation: openMid 0.3s forwards;//animation when clicked on burger menu icon
-
-                //top line
-                &::before {
-                    background: #000;
-                    // top line
-                    animation: openTop 0.3s forwards;//animation when clicked on burger menu icon
-                }
-
-                //bottom line
-                &::after {
-                    background: #000;
-                    // bottom line;
-                    animation: openBtm 0.3s forwards;//animation when clicked on burger menu icon
-                    
-                }
-                
-                //make animation openTop
-                @keyframes openTop {
-                    0% { transform: translateY(-5px) rotate(0deg);  }
-                    50% { transform: translateY(0px) rotate(0deg);  }
-                    100% { transform: translateY(0px) rotate(90deg);  }
-                    
-                }
-                
-                //make animation openMid
-                @keyframes openMid {
-                    50% { transform: rotate(0deg);  }
-                    100% { transform: rotate(45deg);  }
-                    
-                }
-                
-                //make animation openBtm
-                @keyframes openBtm {
-                    0% { transform: translateY(5px) rotate(0deg);  }
-                    50% { transform: translateY(0px) rotate(0deg);  }
-                    100% { transform: translateY(0px) rotate(90deg);  }
-                    
                 }
                 
                 //make animation openTop
@@ -132,6 +86,52 @@ header {
                 
                 //make animation openBtm
                 @keyframes closedBtm {
+                    0% { transform: translateY(5px) rotate(0deg);  }
+                    50% { transform: translateY(0px) rotate(0deg);  }
+                    100% { transform: translateY(0px) rotate(90deg);  }
+                    
+                }
+
+            }
+
+            // active-burger-menu-icon
+            .active-burger-menu-icon {
+                background: #000;
+                //middle line
+                animation: openMid 0.5s forwards;
+
+                //top line
+                &::before {
+                    background: #000;
+                    // top line
+                    animation: openTop 0.5s forwards;
+                }
+
+                //bottom line
+                &::after {
+                    background: #000;
+                    // bottom line;
+                    animation: openBtm 0.5s forwards;
+                    
+                }
+                
+                //make animation top line
+                @keyframes openTop {
+                    0% { transform: translateY(-5px) rotate(0deg);  }
+                    50% { transform: translateY(0px) rotate(0deg);  }
+                    100% { transform: translateY(0px) rotate(90deg);  }
+                    
+                }
+                
+                //make animation middle line
+                @keyframes openMid {
+                    50% { transform: rotate(0deg);  }
+                    100% { transform: rotate(45deg);  }
+                    
+                }
+                
+                //make animation buttom line
+                @keyframes openBtm {
                     0% { transform: translateY(5px) rotate(0deg);  }
                     50% { transform: translateY(0px) rotate(0deg);  }
                     100% { transform: translateY(0px) rotate(90deg);  }
@@ -175,8 +175,7 @@ header {
 
                 //nav-item
                 .nav-item {
-                    //header bg-color transition on page scroll
-
+                    //small screen
                     @media  only screen and (max-width: 992px) { 
                         text-align: center;      
                         flex: 1;
@@ -187,13 +186,13 @@ header {
                         padding: 0.5rem 0rem 0.5rem 2rem;
                         text-transform: uppercase;
                         color:  $dark;
-
+                        //small screen
                         @media  only screen and (max-width: 992px) {  
                             padding: 0;
                         }
                         //nav link hover color
                         &:hover {
-                            color:$dark-light;
+                            color:$light;
                         }
                     }
                     
@@ -234,8 +233,6 @@ header {
             animation-duration: 0.7s;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-
-            // animation-delay: 1s;
         }
 
         //nav-container-border

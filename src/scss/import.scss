@@ -1,0 +1,20 @@
+//import custom variables
+@import "./main/custom-variables";
+
+//import all vender scss files
+@import "./vendor/bootstrap";
+@import "./vendor/google-font-face";
+@import "./vendor/fontawesome";
+
+
+//import custom scss files
+@import "./main/body";
+@import "./main/preloader";
+@import "./main/header";
+@import "./main/home";
+@import "./main/about";
+@import "./main/services";
+@import "./main/projects";
+@import "./main/contact";
+@import "./main/footer";
+@import "./main/animate";
