@@ -6,207 +6,32 @@
     background: $white;
     line-height: 2rem;
 
-    //h1 
-    h1 {
-        margin-bottom: 2rem;
-        font-size: 2rem;
-        //after
-        &::after {
-            content: '';
-            display: block;
-            width: 55px;
-            height: 2px;
-            background: $primary;
-            margin-top: 20px;
-        }
-    }
-
     //h1
     h2, p {
         margin-bottom: 2rem;
     }
     
-
     //h2
     h2 {
         font-size: 1.2rem;
-        // color: $purple;
-    }
-    
-
-    //h3
-    h3 {
-        font-size: 1rem;
-        // color: $purple;
-    }
+    }   
 
     //p
     p {
         font-size: 0.9rem;
-    }       
-
-    // fontawesome icon
-    .fas{       
-        display: inline-block;
-        border-radius: 60px;
-        padding: 15px;
-        color: $white;    
-        margin-right: 2rem;  
-        //small screen
-        @media  only screen and (max-width: 768px) {  
-            margin-right: 1rem; 
-        }     
-    }  
-    
-
-    //ul
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: relative;
-
-        //ul::before 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0px;
-            height: 100%;
-            // border: 1px dashed $purple;   
-
-        }
-
-        //li
-       li {
-           margin: 50px 60px;
-           position: relative;
-
-           //li span
-           span {
-               position: absolute;
-               top: 0;
-               left: -60px;
-               width: 0px;
-               height: 100%;
-            //    border: 1px solid $purple;    
-               //span::before, span::after
-               &::before, &::after {
-                   content: '';
-                   width: 10px;
-                   height: 10px;
-                //    border: 2px solid $purple;   
-                   position: absolute;
-                   border-radius: 50%;
-                   left: -5px;
-                   background: $white;
-               }
-
-               //span::before
-               &::before {
-                   top: -10px;
-               }
-
-               //span::after
-               &::after {
-                   top: 100%;
-               }
-           }
-       }
-        
-    }
-
-         
-    //Education
-    .education {
-
-        //h2
-        h2 {
-            color: $info;
-        }
-
-        //h3
-        h3 {
-            color: $info;
-        }
-
-        //fontawesome icon
-        .fas {
-            box-shadow: 0px 0px 2px $info;   
-            background: $info;           
-        }
-
-        //ul
-        ul {
-            //ul::before 
-            &::before {
-                border: 1px dashed $info;   
-
-            }
-
-            //li span
-            span {
-                border: 1px solid $info;    
-                //span::before, span::after
-                &::before, &::after {
-                    border: 2px solid $info;  
-                }
-            }       
-        }
-        
     }   
     
-    //jobs
-    .jobs {
-
-        //h2
-        h2 {
-            color: $purple;
-        }
-
-        //h3
-        h3 {
-            color: $purple;
-        }
-
-        //fontawesome icon
-        .fas {
-            box-shadow: 0px 0px 2px $purple;   
-            background: $purple;            
-        }
-
-        //ul
-        ul {
-            //ul::before 
-            &::before {
-                border: 1px dashed $purple;   
-
-            }
-
-            //li span
-            span {
-                border: 1px solid $purple;    
-                //span::before, span::after
-                &::before, &::after {
-                    border: 2px solid $purple;  
-                }
-            }       
-        }
-        
+    //button
+    a {    
+        margin-top: 1rem;    
+        padding: 10px 30px; 
     }
     
-
     // skills 
     .skills {
+        margin-top: 3.2rem;
         font-size: 0.9rem;
         background: $white;
-
-        //fontawesome icon
-        .fas {
-            box-shadow: 0px 0px 2px $primary;   
-            background: $primary;            
-        }
 
         //skill 
         .skill {            
@@ -217,12 +42,14 @@
         .skill-name {
             margin: 20px 0;
         }
+
         //skill-bar
         .skill-bar {
             height: 3px;
-            background:#ccc;
+            background:$gray-400;
             border-radius: 8px;
         }
+
         //skill-per
         .skill-per {
             height: 3px;
@@ -232,22 +59,22 @@
             position: relative;
             opacity: 0;
             transition: 3s ease;
-            //before
+
+            //skill-per::before
             &::before {
                 content: attr(data-text);
                 position: absolute;
                 padding: 0px 6px;
                 background-color:  $primary;
                 border: 1px solid  $primary;
-                
-                // font-size: 0.8rem;
-                color: #fff;
+                color: $white;
                 border-radius: 6px;
                 top: -42px;
                 right: 0;
                 transform: translateX(50%);
             }
-            //after
+
+            //skill-per::after
             &::after {
                 content: '';
                 position: absolute;
@@ -257,7 +84,6 @@
                 top: -14px;
                 right: 0;
                 transform: translateX(50%) rotate(45deg);
-
             }
         }
     }

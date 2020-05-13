@@ -1,7 +1,7 @@
 // ============================= home ======================================
 .home {  
     //background color
-    background: linear-gradient(90deg, #fff, rgb(203, 209, 214));
+    background: linear-gradient(90deg, #fff, rgb(203, 209, 214 ));
     
     // small screen
     @media  only screen and (max-width: 992px) {
@@ -27,7 +27,7 @@
         // intro h1
         h1 {
             font-weight: 800;
-            color: #6c757d;
+            color: $secondary;
             font-size: 3.5rem;
             text-transform: uppercase;
             padding-bottom: 1rem;

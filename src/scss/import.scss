@@ -5,6 +5,7 @@
 @import "./vendor/bootstrap";
 @import "./vendor/google-font-face";
 @import "./vendor/fontawesome";
+@import "./vendor/owl-carousel/owl.carousel.scss";
 
 
 //import custom scss files
@@ -13,8 +14,9 @@
 @import "./main/header";
 @import "./main/home";
 @import "./main/about";
+@import "./main/experience";
+@import "./main/portfolio";
 @import "./main/services";
-@import "./main/projects";
 @import "./main/contact";
 @import "./main/footer";
 @import "./main/animate";

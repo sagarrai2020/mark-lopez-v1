@@ -23,5 +23,19 @@
         //import favicon (will move from src/img to docs/img)
         import '../img/favicon-16x16.png';
 
+        //import portfolio images
+        import '../img/portfolio-1.jpg';
+        import '../img/portfolio-2.jpg';
+        import '../img/portfolio-3.jpg';
+        import '../img/portfolio-4.jpg';
+        import '../img/portfolio-5.jpg';
+        import '../img/portfolio-6.jpg';
+        import '../img/portfolio-thumb-1.jpg';
+        import '../img/portfolio-thumb-2.jpg';
+        import '../img/portfolio-thumb-3.jpg';
+        import '../img/portfolio-thumb-4.jpg';
+        import '../img/portfolio-thumb-5.jpg';
+        import '../img/portfolio-thumb-6.jpg';
+
 
 

@@ -1,14 +1,13 @@
 const path = require('path');
 const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// var mixitup = require('mixitup');
 
 module.exports = {
 
-  // == entry files to be bundled
+  // entry files to be bundled
   entry: {
-    bundle: "./src/js/app.js",
-    // vendor: "./src/js/vendor.js",
-    // app : ['./src/js/app.js', './src/js/vendor.js']
+    bundle: "./src/js/module-bundler.js",
   },
 
   // == output files name and path
@@ -108,10 +107,12 @@ module.exports = {
         filename: "../css/[name].css" 
     }),
   // =====================================================================================================================
+  
     // ======== for jquery to work =======================================================================================
     new webpack.ProvidePlugin({
         $: "jquery",
-        jQuery: "jquery"
+        jQuery: "jquery",
+        'window.jQuery': "jquery",
     })
     // ====================================================================================================================
   ]

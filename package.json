@@ -1,10 +1,9 @@
 {
-  "name": "raisagar-v1",
+  "name": "mark-lopez-v1",
   "version": "1.0.0",
-  "description": "portfolio theme",
-  "main": "js/app.js",
+  "description": "Personal Portfolio Theme",
+  "main": "js/module-bundler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
@@ -12,7 +11,7 @@
     "portfolio",
     "theme"
   ],
-  "author": "Sagar Rai",
+  "author": "Rai Theme",
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
@@ -26,13 +25,14 @@
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
     "webpack": "^4.42.0",
-    "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.1",
+    "mixitup": "^3.3.1",
+    "owl.carousel": "^2.3.4",
     "popper.js": "^1.16.1"
   }
 }
