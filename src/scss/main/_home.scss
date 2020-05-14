@@ -1,7 +1,7 @@
 // ============================= home ======================================
 .home {  
     //background color
-    background: linear-gradient(90deg, #fff, rgb(203, 209, 214 ));
+    background: linear-gradient(90deg, #fff, $gray-200);
     
     // small screen
     @media  only screen and (max-width: 992px) {

@@ -4,11 +4,12 @@ header {
 
     //container-inner
     .container-inner {
-        height: 50px;
+        height: 60px;
 
         //logo-container
         .logo-container {
-            font-weight: 600;
+            font-weight: 400;
+            text-transform: uppercase;
             color: $primary;
             margin-right: auto; //important for ie
                 //span
@@ -186,6 +187,8 @@ header {
                         padding: 0.5rem 0rem 0.5rem 2rem;
                         text-transform: uppercase;
                         color:  $dark;
+                        font-size: 0.9rem;
+                        font-weight: 400;
                         //small screen
                         @media  only screen and (max-width: 992px) {  
                             padding: 0;

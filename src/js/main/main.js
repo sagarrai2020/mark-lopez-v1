@@ -12,29 +12,23 @@
 /* INDEX
 ----------------------------------------------------------------------------------------
 
-01. Preloader js
+01. IMPORTS Jquery Plugins 
 
-02. change Menu background on scroll js 
+02. Preloader
 
-03. Navigation js
+03. scroll spy  
 
-04. Smooth scroll to anchor
+04. change Header background on scroll 
 
-05. Portfolio js
+05. Smooth scroll to anchor 
 
-06. Magnific Popup js
+06. (SMALL SCREEN) Burger menu icon open/close AND Navigation menu slide in/out  
 
-07. Testimonial js
+07. scroll reveal contents  
 
-08. client js
-
-09. Ajax Contact Form js
-
-11. Mailchimp js
+8. Portfolio category items mixitup
 
 -------------------------------------------------------------------------------------- */
-
-
 
 
 /*-----------------------------------------------------------------------------------------------*
@@ -72,7 +66,7 @@
             $(document).ready(function(){
 
                 // IMPORTANT - always set scroll postion top to "0" whenever page refress to work with "scroll reveal contents" later
-                $(this).scrollTop(0); 
+                // $(this).scrollTop(0); 
 
                 /*------------------------------------------------------------------------------------------------------------------------------------------------*
                 *        03. scroll spy  (Bootstrap's scroll spy, it will add "active" class to the nav-link when scroll position rich to it's related id element)                                      *
@@ -219,7 +213,7 @@
                                 // SERVICES section
                                     $(".services .animated").each(function(){
                                         if (isScrolledIntoView(this) === true) {
-                                            $(this).addClass(" slideInUp")
+                                            $(this).addClass(" slideInUp faster")
                                         }
                                     });
 
@@ -276,133 +270,11 @@
 //                 });
                 
 
-
-
         /*  ---------------------------------------------------------------------------------------------------------------------------  *
-         *          Portfolio                                                                                                            *
+         *          8. Portfolio                                                                                                            *
          *  ----------------------------------------------------------------------------------------------------------------------------  */
                         var config = $('.portfolio-items');
                         var mixer = mixitup(config);
                        
-                        
-
-
-
-
-
-
-
-
-
-
 
         }); // $(document).ready end
-        
-
-
-
-
-
-//     $(document).ready(function(){
-        
-
- 
- 
-
-                
-//         /*---------------------------------------------------------------------------------------------------------------------------*
-//         *        05. scroll reveal contents                                                                                           *
-//         *-----------------------------------------------------------------------------------------------------------------------------*/
-    
-//                 $(window).on('scroll', function ()  { 
-
-//                     //ABOUT section 
-//                         //content reveal
-//                         $("#about .animated").each(function(){
-//                             if (isScrolledIntoView($(this)) === true) {
-//                                 $(this).addClass("slideInUp slow");                                
-//                             }
-//                         });   
-
-//                         // skills progress bar animation
-//                         $(".skill .skill-per").each(function(){
-//                             if (isScrolledIntoView(this) === true) {
-//                                 //change width of the element based on the elemet's attribute "per"
-//                                 $(this).css("width", $(this).attr("per"));
-//                             }
-//                         });
-
-//                     // SERVICES section
-//                         // content reveal
-//                         $("#services .animated").each(function(){
-//                             if (isScrolledIntoView($(this)) === true) {
-
-//                                 $(this).addClass(" slideInUp slow")
-//                             }
-//                         });
-
-//                     // PROJECTS section
-//                         $(".projects h2").each(function(){
-//                             if (isScrolledIntoView(this) === true) {
-//                                 $(this).addClass(" bounce")
-//                             }
-//                         });
-
-//                         // portfolio image animation
-//                         $("#projects .card").each(function(){
-//                             if (isScrolledIntoView(this) === true) {
-//                                 // animate all img
-//                                 $(this).addClass(" slideInUp slow")
-//                                 $(this).children("img").addClass("slideInDown slow")
-//                             }
-//                         });
-
-//                     // CONTACT section
-//                         $(".contact h1").each(function(){
-//                             if (isScrolledIntoView(this) === true) {
-//                                 $(this).addClass(" slideInUp slow")
-//                             }
-//                         });
-
-//                         $(".contact p").each(function(){
-//                             if (isScrolledIntoView(this) === true) {
-//                                 $(this).addClass(" slideInUp slow")
-//                             }
-//                         });
-
-//                         $(".contact .card").each(function(){
-//                             if (isScrolledIntoView(this) === true) {
-//                                 $(this).addClass(" slideInUp")
-//                             }
-//                         });
-
-//                         // Element position detect function 
-//                         // checks if element is scrolled into view 
-//                         function isScrolledIntoView(elem) {
-//                             //top scroll value
-//                             var winViewTop = $(window).scrollTop();
-//                             //bottom scroll vlue
-//                             var winViewBottom = winViewTop + $(window).height();
-            
-//                             var elemTop = $(elem).offset().top;
-                            
-//                             return ( (winViewBottom >= elemTop));   
-            
-//                         }
-//                 });
-
-
-//         /*----------------------------------------------------------------------------------------------------------------------------*
-//         *       06. Contact info show/hide on lick                                                                                    *
-//         *-----------------------------------------------------------------------------------------------------------------------------*/
-
-//                 $("#contact .card").on("click", function () {
-//                     $(this).children(".icon").toggleClass("icon-active");
-//                 });
-                
-       
-    
-//     }); // $(document).ready end   
-
-
-// })(jQuery);
