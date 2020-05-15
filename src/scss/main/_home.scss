@@ -55,10 +55,9 @@
         //intro a link
         a {
             margin-top: 1rem;
-            padding: 10px 30px;   
+            padding: 10px 50px;  
             // small screen
-            @media  only screen and (max-width: 500px) {
-                
+            @media  only screen and (max-width: 500px) {               
                 margin-top: 0.7rem;
             } 
         }
@@ -87,7 +86,7 @@
 
         // == small screen
         @media (max-width: 576px) {
-            background: url("../img/mark-phones.png") no-repeat center bottom;
+            background: url("../img/mark-mobiles.png") no-repeat center bottom;
             background-size: contain;
         }
     }

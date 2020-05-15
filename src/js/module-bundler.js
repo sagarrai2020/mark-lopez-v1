@@ -23,6 +23,9 @@
         //import favicon (will move from src/img to docs/img)
         import '../img/favicon-16x16.png';
 
+        //import mark lopez thumbnail
+        import '../img/mark-thumbnail.jpg';
+
         //import portfolio item images
         import '../img/portfolio-item-1.jpg';
         import '../img/portfolio-item-2.jpg';

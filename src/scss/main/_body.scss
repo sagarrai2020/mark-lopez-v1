@@ -7,9 +7,9 @@ body {
 
 //h1 (apply this style to all h1 tags except home name)
 h1:not(.name) {
-    margin-bottom: 3rem;
     font-size: 2rem;
     text-transform: uppercase;
+    margin-bottom: 3.5rem;
     //after
     &::after {
         content: '';

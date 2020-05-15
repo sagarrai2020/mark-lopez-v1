@@ -6,11 +6,17 @@
     background: $white;
     line-height: 2rem;
 
-    //h1
+    //img, h2, p
     h2, p {
         margin-bottom: 2rem;
     }
     
+    //img
+    img {
+        
+        margin-bottom: 3.5rem;
+    }
+
     //h2
     h2 {
         font-size: 1.2rem;
@@ -23,15 +29,18 @@
     
     //button
     a {    
-        margin-top: 1rem;    
+        margin-top: 2rem;    
         padding: 10px 30px; 
     }
     
     // skills 
     .skills {
-        margin-top: 3.2rem;
         font-size: 0.9rem;
         background: $white;
+        //small screen
+        @media  only screen and (max-width: 992px) {
+            margin-top: 4rem;
+        }
 
         //skill 
         .skill {            
