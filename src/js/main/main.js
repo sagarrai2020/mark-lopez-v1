@@ -36,6 +36,7 @@
 *------------------------------------------------------------------------------------------------*/
             import mixitup from 'mixitup';//for portfolio section
             import 'owl.carousel';//for service section
+            import "magnific-popup";
 
 
 /*-----------------------------------------------------------------------------------------------*
@@ -275,6 +276,37 @@
          *  ----------------------------------------------------------------------------------------------------------------------------  */
                         var config = $('.portfolio-items');
                         var mixer = mixitup(config);
+
+
+
+
+        /*-------------------------------------------------------------------------*
+        *                  06. Magnific Popup js                                  *
+        *-------------------------------------------------------------------------*/
+        $('.item-popup').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // don't foget to change the duration also in CSS
+                opener: function(element) {
+                    return element.find('img');
+                }
+            }
+            
+        });
+
+
+
+
+
+
+
+
+
+
                        
 
         }); // $(document).ready end
