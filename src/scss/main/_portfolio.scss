@@ -1,5 +1,5 @@
 .portfolio{
-    padding: 100px 0;
+    padding: 6.2rem 0;
     
     //h1
     h1 {
@@ -28,7 +28,7 @@
 
     //portfolio-items
     .portfolio-items {
-        padding-top: 50px;       
+        padding-top: 1rem;       
 
         //item
         .item {
@@ -58,7 +58,7 @@
                     font-size: 0.8rem;
                     color: $dark;
                     text-transform: uppercase;
-                    // == small screen
+                    //small screen (from 576px to below)
                     @media (max-width: 576px) {
                         font-size: 0.7rem;
                     }

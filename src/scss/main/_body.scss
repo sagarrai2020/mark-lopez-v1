@@ -3,9 +3,13 @@
 body {
     overflow-x: hidden;
     background: $light;
+    //small screen (from 992px to below)
+    @media  only screen and (max-width: 992px) {
+        text-align: center;
+    }
 }
 
-//h1 (apply this style to all h1 tags except home name)
+//h1 (apply this style to all h1 tags except home h1.name)
 h1:not(.name) {
     font-size: 2rem;
     text-transform: uppercase;
@@ -17,7 +21,12 @@ h1:not(.name) {
         width: 55px;
         height: 2px;
         background: $primary;
-        margin: 10px 0 0 0;
+        margin: 1rem 0 0 0;
+        //small screen (from 992px to below)
+        @media  only screen and (max-width: 992px) {
+            //h1::after
+            margin: 1rem auto;
+        }
     }
 }
 

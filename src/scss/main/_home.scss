@@ -1,9 +1,8 @@
 // ============================= home ======================================
 .home {  
-    //background color
     background: linear-gradient(90deg, #fff, $gray-200);
     
-    // small screen
+    // small screen (from 992px to below)
     @media  only screen and (max-width: 992px) {
         // home-inner
         .home-inner {
@@ -16,7 +15,7 @@
         width: 50%;
         height: 100vh;
         justify-content: center;
-        // small screen
+        // small screen (from 992px to below)
         @media  only screen and (max-width: 992px) {
             width: 100%;
             height: 50vh;
@@ -30,13 +29,12 @@
             color: $secondary;
             font-size: 3.5rem;
             text-transform: uppercase;
-            padding-bottom: 1rem;
-            margin: 0;
-            // small screen
+            margin-bottom: 1.3rem;
+            // small screen (from 992px to below)
             @media  only screen and (max-width: 992px) {
                 font-size: 3rem;
             }   
-            // small screen
+            // small screen (from 992px to below)
             @media  only screen and (max-width: 500px) {
                 font-size: 2rem;
             } 
@@ -44,47 +42,44 @@
 
         //p
         p {
-            padding-bottom:  1rem;
-            margin: 0;
+            margin-bottom: 1.3rem;
         }
-        //first p element inside intro div
+        //first p child of it's parent div
         p:first-child{
             letter-spacing: 0.5rem;
         }
 
         //intro a link
         a {
-            margin-top: 1rem;
+            margin-top: 1.1rem;
             padding: 10px 50px;  
-            // small screen
+            // small screen (from 500px to below)
             @media  only screen and (max-width: 500px) {               
-                margin-top: 0.7rem;
+                margin-top: 0.8rem;
             } 
         }
     }
 
-    // == home-pic 
+    // home-pic 
     .home-pic {
         width: 50%;
         height: 100vh;
         background: url("../img/mark-desktops.png") no-repeat center bottom;
         background-size: contain;
-        // background-repeat: no-repeat;
-        // background-position: center bottom;
 
-        // == small screen
+        // small screen (from 992px to below)
         @media  only screen and (max-width: 992px) {
             width: 100%;
             height: 50vh;
         }
 
-        // == small screen
+        // small screen (from 768px to below)
         @media (max-width: 768px) {
             background: url("../img/mark-tablets.png") no-repeat center bottom;
             background-size: contain;
         }
 
-        // == small screen
+        // small screen (from 576px to below)
         @media (max-width: 576px) {
             background: url("../img/mark-mobiles.png") no-repeat center bottom;
             background-size: contain;

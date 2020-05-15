@@ -12,14 +12,14 @@ header {
             text-transform: uppercase;
             color: $primary;
             margin-right: auto; //important for ie
-                //span
+                //logo-container span::after
                 span:first-child {
                     color: $secondary;
                     }
 
         }
 
-        // == hambergur container
+        // Hambergur menu icon container
         .burger-container {
             position: relative;
             cursor: pointer; 
@@ -27,7 +27,8 @@ header {
             padding: 10px;
             margin-left: auto; //important for ie
             display: none;
-            // small screen show burger container
+            text-align: left;
+            // small screen (from 992px to below)
             @media  only screen and (max-width: 992px) {
                 display: block;
             }
@@ -146,7 +147,7 @@ header {
         //logo-container
         .nav-container {
             margin-left: auto;  //important for ie
-            //small sreen
+            //small sreen (from 992px to below)
             @media  only screen and (max-width: 992px) {       
                 visibility: hidden;
                 position: absolute;
@@ -176,7 +177,7 @@ header {
 
                 //nav-item
                 .nav-item {
-                    //small screen
+                    //small screen (from 992px to below)
                     @media  only screen and (max-width: 992px) { 
                         text-align: center;      
                         flex: 1;
@@ -189,7 +190,7 @@ header {
                         color:  $dark;
                         font-size: 0.9rem;
                         font-weight: 400;
-                        //small screen
+                        //small screen (from 992px to below)
                         @media  only screen and (max-width: 992px) {  
                             padding: 0;
                         }
