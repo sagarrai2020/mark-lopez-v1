@@ -283,24 +283,59 @@
         /*-------------------------------------------------------------------------*
         *                  06. Magnific Popup js                                  *
         *-------------------------------------------------------------------------*/
-        $('.item-popup').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true
-            },
-            zoom: {
-                enabled: true,
-                duration: 300, // don't foget to change the duration also in CSS
-                opener: function(element) {
-                    return element.find('img');
-                }
-            }
-            
-        });
+                        $('.item-popup').magnificPopup({
+                            type: 'image',
+                            gallery: {
+                                enabled: true
+                            },
+                            zoom: {
+                                enabled: true,
+                                duration: 300, // don't foget to change the duration also in CSS
+                                opener: function(element) {
+                                    return element.find('img');
+                                }
+                            }
+                            
+                        });
 
 
+        /*-------------------------------------------------------------------------*
+        *                  07. Services                                   *
+        *-------------------------------------------------------------------------*/
+                        // $(".testimonial-list").owlCarousel({
+                        //     lazyLoad            : false,
+                        //     pagination          : false,
+                        //     navigation          : false,
+                        //     items               : 1,
+                        //     itemsDesktop        : [1199, 1],
+                        //     itemsDesktopSmall   : [980, 1],
+                        //     itemsTablet         : [768, 1],
+                        //     itemsMobile         : [479, 1],
+                        //     autoPlay            : true
+                        // });
 
-
+                        $(".owl-carousel").owlCarousel({ 
+                            loop: true,
+                            nav: false,
+                            autoplay: true,
+                            pagination: false,
+                            autoplayTimeout: 4000,
+                            autoplayHoverPause: true,
+                            responsive: {
+                                0: {
+                                    items:1
+                                },
+                                576: {
+                                    items:1
+                                },
+                                768: {
+                                    items:2
+                                },
+                                992: {
+                                    items:3
+                                }
+                            },
+                        })
 
 
 

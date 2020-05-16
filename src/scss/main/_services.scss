@@ -1,45 +1,73 @@
 .services {
-    position: relative;
-    padding: 100px 0;
+    padding: 6.2rem 0;
     background: $gray-200;
+    text-align: center;
 
-    //h1
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-        //after
-        &::after {
-            content: '';
-            display: block;
-            width: 55px;
-            height: 2px;
-            background: $primary;
-            margin: 20px auto;
+    //owl carousel
+    .owl-dots {
+        padding-top: 3.5rem;
+
+        //owl-dot span 
+        .owl-dot span {
+            width: 20px;
+            height: 20px;
+            //small screen (from 992px to below)
+            @media  only screen and (max-width: 992px) {
+                width: 10px;
+                height: 10px;
+            }
+
         }
+
+
+
+        //owl-dot:active span
+        .owl-dot.active span {
+            background: $primary;
+            width: 50px;
+            //small screen (from 992px to below)
+            @media  only screen and (max-width: 992px) {
+                width: 20px;
+            }
+        }
+    }
+    
+    //h1::after
+    h1::after {
+        margin: 15px auto;
+    }
+    
+    //p
+    p {
+        margin-bottom: 3.5rem;
+        line-height: 2rem;
     }
        
     
     //card
     .card {
-        margin-top: 1rem;
+        padding: 4.5rem 1rem;
+        margin: 0 0.5rem;
         text-align: center;
+        background: $gray-100;
+
+        //card:hover
+        &:hover {
+            background:  $white;
+        }
 
         //fontawesome icon
-        .fas{   
+        i{   
             color: $primary;    
             margin: 1rem 0 2rem 0;  
-            font-size: 5rem;
+            font-size: 3rem;
         } 
 
         //h2
         .card-title h2 {
             font-size: 1rem;
         }
-
-        //p
-        .card-text {
-            font-size: 0.9rem;
-        }
+        
     }
 }
 
