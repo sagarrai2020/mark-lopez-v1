@@ -317,7 +317,7 @@
                         $(".owl-carousel").owlCarousel({ 
                             loop: true,
                             nav: false,
-                            autoplay: true,
+                            autoplay: false,
                             pagination: false,
                             autoplayTimeout: 4000,
                             autoplayHoverPause: true,
