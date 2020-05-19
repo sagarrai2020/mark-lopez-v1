@@ -20,22 +20,33 @@
         //import image files here to move from src/img to docs/img to use in index.html in <img> tags 
         //(if image files are used in .scss files as background url() then no need to import here the scss loaders in webpack.config.js file will do the job)
 
-        //import favicon (will move from src/img to docs/img)
-        import '../img/favicon-16x16.png';
+        //import favicon image
+        import '../img/favicon/favicon-16x16.png';
 
-        //import mark lopez thumbnail
-        import '../img/mark-thumbnail.jpg';
+        //import about section thumbnail
+        import '../img/about/mark-thumbnail.jpg';
 
-        //import portfolio item images
-        import '../img/portfolio-item-1.jpg';
-        import '../img/portfolio-item-2.jpg';
-        import '../img/portfolio-item-3.jpg';
-        import '../img/portfolio-item-4.jpg';
-        import '../img/portfolio-item-5.jpg';
-        import '../img/portfolio-item-6.jpg';
-        import '../img/portfolio-item-7.jpg';
-        import '../img/portfolio-item-8.jpg';
-        import '../img/portfolio-item-9.jpg';
+        //import portfolio section item images
+        import '../img/portfolio/portfolio-item-1.jpg';
+        import '../img/portfolio/portfolio-item-2.jpg';
+        import '../img/portfolio/portfolio-item-3.jpg';
+        import '../img/portfolio/portfolio-item-4.jpg';
+        import '../img/portfolio/portfolio-item-5.jpg';
+        import '../img/portfolio/portfolio-item-6.jpg';
+        import '../img/portfolio/portfolio-item-7.jpg';
+        import '../img/portfolio/portfolio-item-8.jpg';
+        import '../img/portfolio/portfolio-item-9.jpg';
+
+        //import testimonials section client images
+        import '../img/testimonials/client-1.jpg';
+        import '../img/testimonials/client-2.jpg';
+        import '../img/testimonials/client-3.jpg';
+        import '../img/testimonials/client-4.jpg';
+        import '../img/testimonials/client-5.jpg';
+        import '../img/testimonials/client-6.jpg';
+        import '../img/testimonials/client-7.jpg';
+        import '../img/testimonials/client-8.jpg';
+        import '../img/testimonials/client-9.jpg';
 
 
 

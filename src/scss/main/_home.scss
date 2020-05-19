@@ -64,7 +64,7 @@
     .home-pic {
         width: 50%;
         height: 100vh;
-        background: url("../img/mark-desktops.png") no-repeat center bottom;
+        background: url("../img/home/mark-desktops.png") no-repeat center bottom;
         background-size: contain;
 
         // small screen (from 992px to below)
@@ -75,13 +75,13 @@
 
         // small screen (from 768px to below)
         @media (max-width: 768px) {
-            background: url("../img/mark-tablets.png") no-repeat center bottom;
+            background: url("../img/home/mark-tablets.png") no-repeat center bottom;
             background-size: contain;
         }
 
         // small screen (from 576px to below)
         @media (max-width: 576px) {
-            background: url("../img/mark-mobiles.png") no-repeat center bottom;
+            background: url("../img/home/mark-mobiles.png") no-repeat center bottom;
             background-size: contain;
         }
     }

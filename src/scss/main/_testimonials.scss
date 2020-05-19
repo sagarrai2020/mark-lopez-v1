@@ -11,7 +11,6 @@
         .owl-dot span {
             width: 30px;
             height: 20px;
-            background: $primary;
             //small screen (from 992px to below)
             @media  only screen and (max-width: 992px) {
                 width: 10px;
@@ -24,6 +23,7 @@
         .owl-dot.active span {
             width: 20px;
             height: 20px;
+            background: rgb(255, 166, 0);
             //small screen (from 992px to below)
             @media  only screen and (max-width: 992px) {
                 width: 10px;
@@ -31,41 +31,57 @@
             }
         }
     }
+
+    //h1
+    h1 {      
+        color: rgb(255, 166, 0);
     
-    //h1::after
-    h1::after {
-        margin: 15px auto;
-    }
+        //h1::after
+        &::after {
+            margin: 15px auto;
+            background: rgb(255, 166, 0);
     
-    //p
-    p {
-        margin-bottom: 3.5rem;
-        line-height: 2rem;
+        }
     }
-          
+             
     //card
     .card {
-        padding: 4.5rem 1rem;
         margin: 0 0.5rem;
-        text-align: center;
-        background: $gray-100;
+        align-items: center;
+        background: $light;
 
         //card:hover
         &:hover {
-            background:  $white;
+            background: $white;
         }
 
-        //fontawesome icon
-        i{   
-            color: $primary;    
-            margin: 1rem 0 2rem 0;  
-            font-size: 3rem;
-        } 
 
-        //h2
-        .card-title h2 {
+        //img
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 0.7rem 0 1.5rem 0;
+        }
+
+        .card-text {
+            line-height: 2rem;
+        }
+
+        //right double quote
+        .rightquote, .leftquote {
+            color: rgb(255, 166, 0);
+        }
+
+        //h3
+        h3 {
             font-size: 1rem;
-        }       
+            color: rgb(255, 166, 0);
+        }
+
+        //text muted
+        .text-muted {
+            font-size: 0.8rem;
+        }          
     }
 }
 

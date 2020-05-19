@@ -216,11 +216,18 @@
                                     });
 
                                 // SERVICES section
-                                    $(".services .animated").each(function(){
+                                    $("#services .animated").each(function(){
                                         if (isScrolledIntoView(this) === true) {
                                             $(this).addClass(" slideInUp faster")
                                         }
                                     });
+
+                                    // TESTIMONIALS section
+                                        $("#testimonials .animated").each(function(){
+                                            if (isScrolledIntoView(this) === true) {
+                                                $(this).addClass(" slideInUp faster")
+                                            }
+                                        });
                                     
 
 //                     // CONTACT section
@@ -295,21 +302,20 @@
 
 
         /*-------------------------------------------------------------------------*
-        *           07. Services                                            *
+        *           07. Services, Testimonials Carousel                                           *
         *-------------------------------------------------------------------------*/    
                         //owl carousel condition
                         if ( $( window ).width() > 992) {
                             //autoplay owl carousel
                             startCarouselAutoPlay();
                         }else{
-                            //stop autoplay carousel on small divice user's will swipe the service items themeself
+                            //stop autoplay carousel on small divice user's will swipe the items themeself
                             stoptCarouselAutoPlay() ;
                         }
 
                         //function owl carousel for big screens
-                        function startCarouselAutoPlay() {
-        
-                            $("#service-items").owlCarousel({ 
+                        function startCarouselAutoPlay() {        
+                            $(".owl-carousel").owlCarousel({ 
                                 autoplay: true,
                                 loop: true,
                                 autoplayHoverPause: true,
@@ -328,13 +334,13 @@
                                     }
                                 },
                             })
-
                         }
 
                         //function owl carousel for big screens
-                        function stoptCarouselAutoPlay() {        
-                            $("#service-items").owlCarousel({ 
-                                autoplay: false, // if you want items to slide automatically, set this to true.                                
+                        function stoptCarouselAutoPlay() {          
+                            $(".owl-carousel").owlCarousel({ 
+                                autoplay: false, // if you want items to slide automatically, set this to true. 
+                                loop: true,                               
                                 responsive: {
                                     0: {
                                         items:1
@@ -347,11 +353,6 @@
 
                         }
 
-
-
-
-
-
-                       
+                    
 
         }); // $(document).ready end
