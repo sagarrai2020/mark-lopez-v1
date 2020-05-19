@@ -1,10 +1,16 @@
 .experience{
-    padding: 6.2rem 0 4.5rem 0;
+    padding: 100px 0 50px 0;
     background: linear-gradient(90deg, $gray-200, #fff);
+
+    //h1
+    h1 {
+        margin-bottom: 5rem;
+    }
 
     //h2
     h2 {
         font-size: 1rem;
+        margin-bottom: 1rem;
     }
 
     //ul
@@ -26,44 +32,50 @@
         }
 
         //li
-       li {
-           margin: 20px 60px 50px 60px;
+        li {
+           margin: 0px 20px 60px 50px;
            position: relative;
-           // small screen (from 768px to below)
-           @media  only screen and (max-width: 768px) {
-                margin: 20px 0px 50px 60px;
-           } 
 
+            //li span
+            span {
+                position: absolute;
+                top: 0;
+                left: -50px;
+                width: 0px;
+                height: 100%;  
+                background: $purple; 
+                //span::before, span::after
+                &::before, &::after {
+                    content: '';
+                    width: 10px;
+                    height: 10px;   
+                    position: absolute;
+                    border-radius: 50%;
+                    left: -5px;
+                    background: $white;
+                }
 
-           //li span
-           span {
-               position: absolute;
-               top: 0;
-               left: -60px;
-               width: 0px;
-               height: 100%;   
-               //span::before, span::after
-               &::before, &::after {
-                   content: '';
-                   width: 10px;
-                   height: 10px;   
-                   position: absolute;
-                   border-radius: 50%;
-                   left: -5px;
-                   background: $white;
-               }
+                //span::before
+                &::before {
+                    top: -10px;
+                }
 
-               //span::before
-               &::before {
-                   top: -10px;
-               }
+                //span::after
+                &::after {
+                    top: 100%;
+                }
+            }
 
-               //span::after
-               &::after {
-                   top: 100%;
-               }
-           }
-       }
+            //duration
+            .duration {
+                color: $purple;
+            }
+
+            //company
+            .company {
+                font-weight: 600;;
+            }
+        }
         
     }
 

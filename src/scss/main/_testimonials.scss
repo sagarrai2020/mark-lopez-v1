@@ -1,6 +1,6 @@
-.services {
+.testimonials {
     padding: 6.2rem 0;
-    background: linear-gradient(90deg, $gray-200, #fff);
+    background: $white;
     text-align: center;
 
     //owl carousel
@@ -11,6 +11,7 @@
         .owl-dot span {
             width: 30px;
             height: 20px;
+            background: $primary;
             //small screen (from 992px to below)
             @media  only screen and (max-width: 992px) {
                 width: 10px;
@@ -23,7 +24,6 @@
         .owl-dot.active span {
             width: 20px;
             height: 20px;
-            background: $primary;
             //small screen (from 992px to below)
             @media  only screen and (max-width: 992px) {
                 width: 10px;
@@ -48,11 +48,11 @@
         padding: 4.5rem 1rem;
         margin: 0 0.5rem;
         text-align: center;
-        background: $white;
+        background: $gray-100;
 
         //card:hover
         &:hover {
-            background:  $light;
+            background:  $white;
         }
 
         //fontawesome icon

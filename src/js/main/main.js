@@ -34,9 +34,13 @@
 /*-----------------------------------------------------------------------------------------------*
 *       01. IMPORTS Jquery Plugins                                                               *
 *------------------------------------------------------------------------------------------------*/
-            import mixitup from 'mixitup';//for portfolio section
-            import 'owl.carousel';//for service section
+
+            //for portfolio section
+            import mixitup from 'mixitup';
             import "magnific-popup";
+
+            //for service section
+            import 'owl.carousel';
 
 
 /*-----------------------------------------------------------------------------------------------*
@@ -174,7 +178,7 @@
                             });
 
                 /*---------------------------------------------------------------------------------------------------------------------------*
-                *           07. scroll reveal contents                                                                                           *
+                *       07. scroll reveal contents                                                                                           *
                 *-----------------------------------------------------------------------------------------------------------------------------*/
             
                             $(window).on('scroll', function ()  { 
@@ -217,15 +221,7 @@
                                             $(this).addClass(" slideInUp faster")
                                         }
                                     });
-
-//                         // portfolio image animation
-//                         $("#projects .card").each(function(){
-//                             if (isScrolledIntoView(this) === true) {
-//                                 // animate all img
-//                                 $(this).addClass(" slideInUp slow")
-//                                 $(this).children("img").addClass("slideInDown slow")
-//                             }
-//                         });
+                                    
 
 //                     // CONTACT section
 //                         $(".contact h1").each(function(){
@@ -281,7 +277,7 @@
 
 
         /*-------------------------------------------------------------------------*
-        *                  06. Magnific Popup js                                  *
+        *           06. Magnific Popup js                                  *
         *-------------------------------------------------------------------------*/
                         $('.item-popup').magnificPopup({
                             type: 'image',
@@ -294,48 +290,62 @@
                                 opener: function(element) {
                                     return element.find('img');
                                 }
-                            }
-                            
+                            }                            
                         });
 
 
         /*-------------------------------------------------------------------------*
-        *                  07. Services                                   *
-        *-------------------------------------------------------------------------*/
-                        // $(".testimonial-list").owlCarousel({
-                        //     lazyLoad            : false,
-                        //     pagination          : false,
-                        //     navigation          : false,
-                        //     items               : 1,
-                        //     itemsDesktop        : [1199, 1],
-                        //     itemsDesktopSmall   : [980, 1],
-                        //     itemsTablet         : [768, 1],
-                        //     itemsMobile         : [479, 1],
-                        //     autoPlay            : true
-                        // });
+        *           07. Services                                            *
+        *-------------------------------------------------------------------------*/    
+                        //owl carousel condition
+                        if ( $( window ).width() > 992) {
+                            //autoplay owl carousel
+                            startCarouselAutoPlay();
+                        }else{
+                            //stop autoplay carousel on small divice user's will swipe the service items themeself
+                            stoptCarouselAutoPlay() ;
+                        }
 
-                        $(".owl-carousel").owlCarousel({ 
-                            loop: true,
-                            nav: false,
-                            autoplay: false,
-                            pagination: false,
-                            autoplayTimeout: 4000,
-                            autoplayHoverPause: true,
-                            responsive: {
-                                0: {
-                                    items:1
+                        //function owl carousel for big screens
+                        function startCarouselAutoPlay() {
+        
+                            $("#service-items").owlCarousel({ 
+                                autoplay: true,
+                                loop: true,
+                                autoplayHoverPause: true,
+                                smartSpeed: 400,
+                                slideTransition: "linear",
+                                autoplayTimeout: 5000,
+                                responsive: {
+                                    0: {
+                                        items:1
+                                    },
+                                    700: {
+                                        items:2
+                                    },
+                                    992: {
+                                        items:3
+                                    }
                                 },
-                                576: {
-                                    items:1
+                            })
+
+                        }
+
+                        //function owl carousel for big screens
+                        function stoptCarouselAutoPlay() {        
+                            $("#service-items").owlCarousel({ 
+                                autoplay: false, // if you want items to slide automatically, set this to true.                                
+                                responsive: {
+                                    0: {
+                                        items:1
+                                    },
+                                    700: {
+                                        items:2
+                                    },
                                 },
-                                768: {
-                                    items:2
-                                },
-                                992: {
-                                    items:3
-                                }
-                            },
-                        })
+                            })
+
+                        }
 
 
 
