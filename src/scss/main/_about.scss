@@ -12,11 +12,6 @@
         margin-bottom: 2rem;
     }
     
-    //img
-    img {
-        
-        margin-bottom: 3.3rem;
-    }
 
     //h2
     h2 {
@@ -27,22 +22,13 @@
     p {
         font-size: 0.9rem;
         text-align: left;
-    }   
+    } 
     
-    //button
-    a {    
-        margin-top: 2rem;    
-        padding: 10px 30px; 
-    }
     
     // skills 
     .skills {
         font-size: 0.9rem;
         background: $white;
-        //small screen (from 992px to below)
-        @media  only screen and (max-width: 992px) {
-            margin-top: 4rem;
-        }
 
         //skill 
         .skill {            
@@ -52,7 +38,6 @@
         //skill-name
         .skill-name {
             margin: 20px 0;
-            text-align: left;
         }
 
         //skill-bar
