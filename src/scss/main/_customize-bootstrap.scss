@@ -1,17 +1,20 @@
 
-// === RESET Bootstrap
+// RESET Bootstrap
 
         //font-family
         $font-family-base: "Montserrat", Sans-serif;
+
+        //font-size-base
+        $font-size-base: 0.9rem;
 
         // button border radius
         $btn-border-radius: 1.5rem;
 
         // link color
-        $link-color: #6c757d;
+        $link-color: #343a40;
 
         // link hover color
-        $link-hover-color: #17a2b8;
+        $link-hover-color: #677eab;
 
         // link hover decoration
         $link-hover-decoration: none;
@@ -20,10 +23,8 @@
         $headings-font-weight: 600;
         $headings-color: #6c757d;
 
-        // $primary: rgb(46, 64, 93);
+        // primary color
         $primary: #677eab;
-
-        $blue: #fff;
 
 
 // NOTE: if you want TO add any custom colors for icons and tags just create a variable here and use in all scss files

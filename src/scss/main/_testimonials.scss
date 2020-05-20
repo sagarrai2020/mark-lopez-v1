@@ -16,7 +16,6 @@
                 width: 10px;
                 height: 10px;
             }
-
         }
 
         //owl-dot:active span
@@ -39,8 +38,7 @@
         //h1::after
         &::after {
             margin: 15px auto;
-            background: rgb(255, 166, 0);
-    
+            background: rgb(255, 166, 0);   
         }
     }
              
@@ -55,7 +53,6 @@
             background: $white;
         }
 
-
         //img
         img {
             width: 100px;
@@ -64,7 +61,7 @@
         }
 
         .card-text {
-            line-height: 2rem;
+            line-height: 1.5rem;
         }
 
         //right double quote
@@ -73,15 +70,10 @@
         }
 
         //h3
-        h3 {
+        h2 {
             font-size: 1rem;
             color: rgb(255, 166, 0);
-        }
-
-        //text muted
-        .text-muted {
-            font-size: 0.8rem;
-        }          
+        }         
     }
 }
 

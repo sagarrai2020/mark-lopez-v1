@@ -302,7 +302,7 @@
 
 
         /*-------------------------------------------------------------------------*
-        *           07. Services, Testimonials Carousel                                           *
+        *           07. Services, Testimonials, Blog section (Big screen autoplay slider, Small screen touch swipe) owl carousel                                          *
         *-------------------------------------------------------------------------*/    
                         //owl carousel condition
                         if ( $( window ).width() > 992) {

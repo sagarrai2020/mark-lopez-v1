@@ -15,8 +15,9 @@
     li {      
         cursor: pointer;   
         padding-bottom: 10px;
-        //small screen (from 576px to below)
-        @media  only screen and (max-width: 576px) {
+        text-transform: uppercase;
+        //small screen (from 350px to below)
+        @media  only screen and (max-width: 350px) {
             font-size: 0.8rem;
         }
 
@@ -30,7 +31,7 @@
     //active
     .mixitup-control-active {
         color: $primary;
-        border-bottom: 1px solid $primary;
+        border-bottom: 2px solid $gray-300;
 
     }
     
@@ -63,12 +64,12 @@
                 //overlay-inner                
                 //h3
                 h3 {
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     color: $dark;
                     text-transform: uppercase;
                     //small screen (from 576px to below)
                     @media (max-width: 576px) {
-                        font-size: 0.7rem;
+                        font-size: 0.8rem;
                     }
                 }
 
