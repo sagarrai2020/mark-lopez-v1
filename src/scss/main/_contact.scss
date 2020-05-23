@@ -54,11 +54,14 @@
     // contact form container 
     .contact-form-container {
         position: relative;
-
+        //small screen (from 992px to below)
+        @media  only screen and (max-width: 992px) {
+            padding: 2rem 0;
+        }
+        
         //form group
         .form-group {
-            margin-bottom: 1.5rem;
-            
+            margin-bottom: 1.5rem;           
 
             //input textarea
             input,  textarea{
@@ -69,9 +72,9 @@
             input{
                 padding: 1.5rem 0.8rem;
                 //small screen (from 992px to below)
-                @media  only screen and (max-width: 992px) {
-                    padding: 1rem 0.8rem;
-                }
+                // @media  only screen and (max-width: 992px) {
+                //     padding: 1rem 0.8rem;
+                // }
             }
 
             //input textarea

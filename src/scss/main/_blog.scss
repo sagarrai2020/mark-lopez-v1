@@ -50,7 +50,7 @@
 
         //card:hover
         &:hover img{
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
 
         //img-wrapper
@@ -60,6 +60,8 @@
             //img
             img {
                 transition: 0.5s ease-out;  
+                height: 100%;
+                width: 100%;
             }
         }
 
