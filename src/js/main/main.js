@@ -46,10 +46,10 @@
             $(window).on( 'load', function(){
                             
                 //hide preloader icon
-                // $(".preloader .preloader-icon").fadeOut("slow", function(){
+                $(".preloader .preloader-icon").fadeOut("slow", function(){
 
                     // slide left preloader div after and reveal header and home contents
-                    // $(".preloader").addClass("preloader-animate slideOutLeft fast").one("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function() { 
+                    $(".preloader").addClass("preloader-animate slideOutLeft fast").one("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function() { 
 
                         //==== home intro animation ======
                         $("header").addClass(" fadeIn slower");
@@ -58,8 +58,8 @@
                         $(".home a").addClass("slideInUp");
                         $(".home .home-pic").addClass("slideInUp slower");
                         //============= END =========================
-                //     });
-                // });
+                    });
+                });
 
             }); // $(window).on end
             
@@ -68,7 +68,7 @@
             $(document).ready(function(){
 
                 // IMPORTANT - always set scroll postion top to "0" whenever page refress to work with "scroll reveal contents" later
-                // $(this).scrollTop(0); 
+                $(this).scrollTop(0); 
 
                 /*------------------------------------------------------------------------------------------------------------------------------------------------*
                 *   03. scroll spy  (Bootstrap's scroll spy, it will add "active" class to the nav-link when scroll position rich to it's related id element)                                      *
