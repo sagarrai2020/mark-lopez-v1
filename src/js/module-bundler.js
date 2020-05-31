@@ -52,10 +52,10 @@
         import '../img/blog/blog-post-1.jpg';
         import '../img/blog/blog-post-2.jpg';
         import '../img/blog/blog-post-3.jpg';
-        import '../img/blog/blog-post-4.jpg';
-        import '../img/blog/blog-post-5.jpg';
-        import '../img/blog/blog-post-6.jpg';
-        import '../img/blog/blog-post-7.jpg';
+        // import '../img/blog/blog-post-4.jpg';
+        // import '../img/blog/blog-post-5.jpg';
+        // import '../img/blog/blog-post-6.jpg';
+        // import '../img/blog/blog-post-7.jpg';
         // import '../img/blog/blog-post-8.jpg';
         // import '../img/blog/blog-post-9.jpg';
 
