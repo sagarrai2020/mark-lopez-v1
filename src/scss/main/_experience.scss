@@ -24,16 +24,17 @@
         margin: 0;
         padding: 0;
         position: relative;
-        text-align: left;
+        // text-align: left;
+        // background: yellow;
 
         //ul::before 
         &::before {
             content: '';
             position: absolute;
-            top: 0;
+            top: 2px;
             left: 0;
             width: 0px;
-            height: 100%;  
+            height: 85%;  
         }
 
         //li
@@ -44,25 +45,25 @@
             //li span
             span {
                 position: absolute;
-                top: 0;
+                top: 2px;
                 left: -50px;
                 width: 0px;
-                height: 100%;  
+                height: 85%;  
                 background: $purple; 
                 //span::before, span::after
                 &::before, &::after {
                     content: '';
-                    width: 10px;
-                    height: 10px;   
+                    width: 15px;
+                    height: 15px;   
                     position: absolute;
                     border-radius: 50%;
-                    left: -5px;
+                    left: -7px; 
                     background: $white;
                 }
 
                 //span::before
                 &::before {
-                    top: -10px;
+                    top: -2px;
                 }
 
                 //span::after
@@ -89,39 +90,12 @@
 
         //h2
         h2 {
-            color: $primary;
+            color: $info;
         }
 
         //small
         .company-name {
             text-transform: uppercase;
-        }
-
-        //ul
-        ul {
-            //ul::before 
-            &::before {
-                border: 1px dashed $primary;   
-
-            }
-
-            //li span
-            span {
-                border: 1px solid $primary;    
-                //span::before, span::after
-                &::before, &::after {
-                    border: 2px solid $primary;  
-                }
-            }       
-        }
-    }
-
-    //colum right
-    .col-right {
-
-        //h2
-        h2 {
-            color: $info;
         }
 
         //ul
@@ -138,6 +112,33 @@
                 //span::before, span::after
                 &::before, &::after {
                     border: 2px solid $info;  
+                }
+            }       
+        }
+    }
+
+    //colum right
+    .col-right {
+
+        //h2
+        h2 {
+            color: $purple;
+        }
+
+        //ul
+        ul {
+            //ul::before 
+            &::before {
+                border: 1px dashed $purple;   
+
+            }
+
+            //li span
+            span {
+                border: 1px solid $purple;    
+                //span::before, span::after
+                &::before, &::after {
+                    border: 2px solid $purple; 
                 }
             }       
         }

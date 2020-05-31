@@ -10,6 +10,7 @@
         .owl-dot span {
             width: 30px;
             height: 20px;
+            transition: all 0.5s linear;
             //small screen (from 992px to below)
             @media  only screen and (max-width: 992px) {
                 width: 10px;
@@ -28,6 +29,11 @@
                 width: 10px;
                 height: 10px;
             }
+        }
+
+        //owl-dot:focus
+        .owl-dot:focus {
+            outline: 0;
         }
     }
 
@@ -50,7 +56,7 @@
 
         //card:hover
         &:hover img{
-            transform: scale(1.1);
+            transform: scale(1.2);
         }
 
         //img-wrapper
@@ -60,9 +66,7 @@
             //img
             img {
                 transition: 0.5s ease-out;  
-                height: 100%;
-                width: 100%;
-            }
+            }           
         }
 
         //h2

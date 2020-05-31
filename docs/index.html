@@ -12,7 +12,15 @@
         <meta name="keywords" content="Single page site, Personal Portfolio, Bootstrap Template, Themeforest Template">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#677eab">
-        <!-- bootstrap 4,  Font Awesome Free 5.12.1, google font-face "montserrat", custom.css (bundle)-->
+        <!-- 
+            bootstrap css,  
+            Font Awesome Free 5 css, 
+            google font css, 
+            owl-carousel css,
+            magnific-popup css,
+            main.css 
+            (bundle into bundle.css file) 
+        -->
         <link rel="stylesheet" href="./css/bundle.css">
         <!-- favicon  -->
         <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
@@ -23,51 +31,66 @@
         <![endif]-->
 
         <!-- =========== site load progress div  ============== -->
-        <div class="preloader">
+        <!-- <div class="preloader">
             <div class="preloader-icon"></div>
-        </div>
+        </div> -->
         <!-- ============ END =================================-->
 
         <!-- ================================== header ====================================  -->
         <header class="fixed-top animated">
-            <!-- container  -->
             <div class="container">
-                <!-- inner-container  -->
-                <div class="container-inner d-flex justify-content-between align-items-center">
+
+                <!-- flex container  -->
+                <div class="flex-container d-flex justify-content-between align-items-center">
+
                     <!-- Logo container-->
                     <div class="logo-container ">
-                        <div class="logo">
-                            <span>Mark</span> <span>Lopez</span>
-                        </div>
-                    </div>
-                    <!-- Mobile menu burger icon container  -->
+                        <img src="./img/logo.png" height="30" alt="LOGO">
+                    </div><!-- Logo container END -->
+
+                    <!-- Mobile menu icon container  -->
                     <div class="burger-container">
-                        <div class="burger-menu-icon"></div>
-                    </div>
+                        <div class="burger-line"></div>
+                    </div><!-- Mobile menu icon container  END-->
+
                     <!-- navbar-container -->
                     <div class="nav-container">                       
                         <ul class="nav">
+
+                            <!-- item 1  -->
                             <li class="nav-item">
                                 <a class="nav-link active" href="#home" >Home</a>
-                            </li>
+                            </li><!-- item 1 END -->
+
+                            <!-- item 2  -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#about">About</a>
-                            </li>
+                            </li><!-- item 2 END -->
+
+                            <!-- item 3  -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#portfolio">Portfolio</a>
-                            </li>
+                            </li><!-- item 3 END -->
+
+                            <!-- item 4  -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">Services</a>
-                            </li>
+                            </li><!-- item 4 END -->
+
+                            <!-- item 5 -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#blog">Blog</a>
-                            </li>
+                            </li><!-- item 5 END -->
+
+                            <!-- item 6 -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact</a>
-                            </li>
+                            </li><!-- item 6 END-->
+
                         </ul>                           
-                    </div>
-                </div>
+                    </div><!-- navbar-container END-->
+
+                </div><!-- flex container END-->
             </div>
         </header>
         <!-- ================================== header END ================================ -->
@@ -75,32 +98,47 @@
         <!-- ================================== home ====================================== -->
         <section id="home" class="home">
             <div class="container">
-                <div class="home-inner d-flex">               
-                    <!-- intro  -->
-                    <div class="intro d-flex flex-column">
-                        <p class="animated">Hello, I'm</p>
-                        <h1 class="name animated">Mark Lopez</h1>
+
+                <!-- flex container  -->
+                <div class="flex-container d-flex">  
+
+                    <!-- item left intro -->
+                    <div class="intro">
+                        <p class="animated">Hello, I'm</p>    
+                        <h1 class="name animated">Mark Lopez</h1>  
                         <p class="animated">I'm a Full Stack Web Developer</p>
                         <div>
                             <a class="btn btn-primary animated" role="button" href="#about">MORE <i class="fas fa-long-arrow-alt-down ml-2"></i></a>
                         </div>
-                    </div>
-                    <!-- home-pic  -->
-                    <div class="home-pic animated"></div>
-                </div>
+                    </div><!-- item left intro END-->
 
+                    <!-- item right photo -->
+                    <div class="home-pic animated"></div>
+                    <!-- item right photo END-->
+                   
+                </div>
+                <!-- flex container END-->
             </div>
         </section>
         <!-- ================================== home END ================================== -->
 
         <!-- ================================== about ===================================== -->
         <section class="about" id="about">
-            <div class="container">                            
+            <div class="container">  
+
+                <!-- heading -->
                 <h1 class="animated">About</h1> 
+                <!-- heading END -->
+
                 <div class="row">
-                    <!-- intro  -->
-                    <div class="col-lg-6 bg-">                                              
-                        <h2 class="animate">Hello!</h2>
+
+                    <!-- column left  -->
+                    <div class="col-lg-6">  
+
+                        <!-- heading 2 -->
+                        <h2 class="animate">Hello!</h2> 
+                        <!-- heading 2 END-->
+
                         <P class="animated">
                             My name is Mark Lopez and I am a Web Developer based in London, United Kingdom. I have serious passion for web development and i enjoy learning new technologies and new concepts everyday. 
                         </P>
@@ -108,22 +146,25 @@
                             I graduated in 2016 with a Bachelor of Multimedia with strong focus in web development. Iste aspernatur sit  ab incidunt suscipit vero quae,  Iste aspernatur incidunt suscipit vero quae, minima, reiciendis minus sint rem? Magni, sequi .
                         </p>
                         <p class="animated">
-
                             I am highly experienced in Front-end as well as Back-end technologies such as iste aspernatur sit minima doloremque ab incidunt suscipit vero quae,  Iste aspernatur sit minima magnam?  vero quae, minima, reiciendis minus sint rem? Magni, sequi .
-                        </p>
+                        </p>                       
                         <p class="animated">
                             My Goal is to build kick ass website for entrepreneurs and small companies who want iste aspernatur sit minima doloremque ab incidunt suscipit vero quae,  beatae molestiae doloremque ab incidunt suscipit vero quae, minima, reiciendis minus sint rem? Magni, sequi .
                         </p>
-                    </div>
-                    <!-- skills -->
-                    <div class="col-lg-6 bg-">                        
+                    </div><!-- column left END -->
+
+                    <!-- column right -->
+                    <div class="col-lg-6 bg-">  
+                        <!-- skills -->                      
                         <div class="skills">
+
+                            <!-- heading 2-->
                             <h2 class="animated">My Skills</h2>
+                            <!-- heading 2 END -->
+
                             <p class="animated">
                                 I have excellent knowledge in many defferent technologies. Using these technologies i can build you lorem ipsum dolor sit amet nesciunt animi ipsum sapiente. Repellat maxime rerum omnis eveniet aut.
                             </p>
-
-                            <!-- EDIT: just add/remove "skill" divs -->
 
                             <!-- skill 1 -->
                             <div class="skill">
@@ -172,74 +213,109 @@
                                 </div>
                             </div> 
 
-                        </div>                       
-                    </div>
+                        </div><!-- skills END-->                         
+                    </div><!-- column right END-->
                 </div>
-
             </div>
         </section>
         <!-- ================================== about END ================================= -->
 
-        <!-- ================================== Experience ================================ -->
+        <!-- ================================== My Experience ================================ -->
         <section class="experience" id="experience">
             <div class="container">
+
+                <!-- heading  -->
                 <h1 class="animated">My Experience</h1>
+                <!-- heading  END-->
+
                 <div class="row mx-0">
-                    <div class="col-lg-6  px-1 bg-">
-                        <!-- Column Left  -->
+
+                    <!-- Column Left  -->
+                    <div class="col-lg-6 px-1">                       
                         <div class="col-left">  
                             <ul>
+
+                                <!-- item 1 -->
                                 <li class="animated">
                                     <span></span>
                                     <h2>UI / UX Designer</h2>                                
-                                    <small class="text-muted">2017 - 2019 | IT company, Lodon</small><br>                                   
+                                    <small class="text-muted">2017 - Present | Facebook</small><br>                                   
                                     <p>I have successfully completed a wide range of project in this role such as Lorem ipsum dolor sit, iure excepturi, repellendus id, ullam molestias</p>
-                                </li>
+                                </li><!-- item 1 END-->
+
+                                <!-- item 2 -->
                                 <li class="animated">
                                     <span></span>
                                     <h2>Front end Developer</h2>                                   
-                                    <small class="text-muted">2017 - 2019 | IT company, Lodon</small><br>                                   
+                                    <small class="text-muted">2017 - 2019 | Google</small><br>                                   
                                     <p>This role has provided me with experience in a large number of web development technologies such as Lorem ipsum dolor sit, iure excepturi, repellendus id, ullam molestias</p>
-                                </li>
+                                </li><!-- item 2 END-->
+
+                                <!-- item 3 -->
+                                <li class="animated">
+                                    <span></span>
+                                    <h2>Front end Developer</h2>                                   
+                                    <small class="text-muted">2017 - 2019 | Envato</small><br>                                   
+                                    <p>This role has provided me with experience in a large number of web development technologies such as Lorem ipsum dolor sit, iure excepturi, repellendus id, ullam molestias</p>
+                                </li><!-- item 3 END-->
+
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 px-1 bg-">
-                        <!-- Column Right  -->
+                        </div> 
+                    </div><!-- Column Left END-->
+
+                    <!-- Column right  -->
+                    <div class="col-lg-6 px-1">
                         <div class="col-right">  
                             <ul>
+
+                                <!-- item 1  -->
                                 <li class="animated">
                                     <span></span>
                                     <h2>API Developer</h2>                                
-                                    <small class="text-muted">2017 - 2019 | IT company, Lodon</small><br>                                   
+                                    <small class="text-muted">2017 - 2019 | Facebook</small><br>                                   
                                     <p>I have successfully completed a wide range of project in this role such as Lorem ipsum dolor sit, iure excepturi, repellendus id, ullam molestias</p>
-                                </li>
+                                </li><!-- item 1 END-->
+
+                                <!-- item 2-->
                                 <li class="animated">
                                     <span></span>
                                     <h2>Database Developer</h2>                               
-                                    <small class="text-muted">2017 - 2019 | IT company, Lodon</small><br>                                   
+                                    <small class="text-muted">2017 - 2019 | Google</small><br>                                   
                                     <p>This role has provided me with experience in a large number of web development technologies such as Lorem ipsum dolor sit, iure excepturi, repellendus id, ullam molestias</p>
-                                </li>
+                                </li><!-- item 2 END-->
+
+                                <!-- item 3 -->
+                                <li class="animated">
+                                    <span></span>
+                                    <h2>Database Developer</h2>                               
+                                    <small class="text-muted">2017 - 2019 | Envato</small><br>                                   
+                                    <p>This role has provided me with experience in a large number of web development technologies such as Lorem ipsum dolor sit, iure excepturi, repellendus id, ullam molestias</p>
+                                </li><!-- item 3 END-->
+
                             </ul>
-                        </div>                      
-                    </div>
+                        </div>                    
+                    </div><!-- Column right END-->
                 </div>
             </div>
         </section>
-        <!-- ================================== Experience END ============================ -->
+        <!-- ================================== My Experience END ============================ -->
 
         <!-- ================================== Portfolio ================================= -->
         <section class="portfolio" id="portfolio">
-            <div class="container text-center">  
+            <div class="container text-center"> 
+
                 <!-- heading -->
                 <h1 class="animated">My Portfolio</h1>
+                <!-- heading END-->
+
                 <!-- catetories  -->
                 <ul class="list-unstyled animated">
                     <li class="d-inline mr-3" data-filter="all">All</li>
                     <li class="d-inline mr-3" data-filter=".design">Design</li>
                     <li class="d-inline mr-3" data-filter=".theme">Theme</li>
                     <li class="d-inline mr-3" data-filter=".website">Website</li>
-                </ul>                
+                </ul><!-- catetories  END--> 
+
                 <!-- portfolio items  -->
                 <div class="portfolio-items">
                     <div class="row mx-0">
@@ -253,7 +329,7 @@
                                     <p>Design</p>
                                 </div>
                             </div>
-                        </div>
+                        </div><!-- item 1 END-->
 
                         <!-- item 2 -->
                         <div class="col-md-4 col-sm-6 col-6 px-1 mix website">
@@ -264,7 +340,7 @@
                                     <p>www.example.com</p>
                                 </div>
                             </div>
-                        </div>
+                        </div><!-- item 2 END-->
 
                         <!-- item 3 -->
                         <div class="col-md-4 col-sm-6 col-6 px-1 mix theme">
@@ -275,7 +351,7 @@
                                     <p>Theme</p>
                                 </div>
                             </div>
-                        </div>
+                        </div><!-- item 3 END-->
 
                         <!-- item 4 -->
                         <div class="col-md-4 col-sm-6 col-6 px-1 mix design">
@@ -286,7 +362,7 @@
                                     <p>Design</p>
                                 </div>
                             </div>
-                        </div>
+                        </div><!-- item 4 END-->
 
                         <!-- item 5 -->
                         <div class="col-md-4 col-sm-6 col-6 px-1 mix website">
@@ -297,7 +373,7 @@
                                     <p>www.example.com</p>
                                 </div>
                             </div>
-                        </div>
+                        </div><!-- item 5 END-->
 
                         <!-- item 6 -->
                         <div class="col-md-4 col-sm-6 col-6 px-1 mix theme">
@@ -308,7 +384,7 @@
                                     <p>Theme</p>
                                 </div>
                             </div>
-                        </div>   
+                        </div><!-- item 6 END-->   
 
                         <!-- item 7 -->
                         <div class="col-md-4 col-sm-6 col-6 px-1 mix design">
@@ -319,7 +395,7 @@
                                     <p>Design</p>
                                 </div>
                             </div>
-                        </div> 
+                        </div><!-- item 7 END--> 
 
                         <!-- item 8 -->
                         <div class="col-md-4 col-sm-6 col-6 px-1 mix website">
@@ -330,7 +406,7 @@
                                     <p>www.example.com</p>
                                 </div>
                             </div>
-                        </div> 
+                        </div><!-- item 8 END--> 
 
                         <!-- item 9 -->
                         <div class="col-md-4 col-sm-6 col-6 px-1 mix theme">
@@ -341,7 +417,7 @@
                                     <p>Theme</p>
                                 </div>
                             </div>
-                        </div> 
+                        </div><!-- item 9 END--> 
 
                     </div>                   
                 </div>
@@ -352,84 +428,79 @@
         <!-- ================================== Services ================================== -->
         <section class="services" id="services">
             <div class="container">
-                 <h1 class="animated">My Services</h1>  
-                 <!-- owl carousel container -->
-                 <div class="owl-carousel owl-theme">  
 
-                    <!-- EDIT: just add/remove card div  -->
-                     
+                <!-- heading  -->
+                 <h1 class="animated">My Services</h1>                  
+                <!-- heading  END-->
+
+                <!-- owl carousel container -->
+                <div class="owl-carousel owl-theme">  
+                    
                     <!-- service 1 -->
-                     <div class="card card-body shadow-sm">
-                         <i class="fas fa-eye-dropper"></i>
-                         <h2 class="card-title">Logo</h2>
-                         <p class="card-text text-muted">
-                             <small class="text-muted">Design</small>                               
-                         </p>
-                     </div> 
-                     
-                     <!-- service 2 -->
-                      <div class="card card-body shadow-sm">
-                         <i class="fas fa-igloo"></i>
-                         <h2 class="card-title">Graphic</h2>
-                         <div class="card-text">
-                             <small class="text-muted">Design</small>                               
-                         </div>
-                     </div>                      
-                     
-                     <!-- service 3 -->
-                      <div class="card card-body shadow-sm">
-                         <i class="fas fa-layer-group"></i>
-                         <h2 class="card-title">UI / UX Design</h2>
-                         <p class="card-text">
-                             <small class="text-muted">Design</small>                               
-                         </p>
-                     </div>     
-                     
-                     <!-- service 4 -->
-                      <div class="card card-body shadow-sm">
-                         <i class="fas fa-laptop-code"></i>
-                         <h2 class="card-title">Custom</h2>
-                         <p class="card-text">
-                             <small class="text-muted">Web Development</small>                               
-                         </p>
-                     </div>    
-                     
-                     <!-- service 5 -->
-                      <div class="card card-body shadow-sm">
-                         <i class="fab fa-wordpress-simple"></i>
-                         <h2 class="card-title">CMS</h2>
-                         <p class="card-text">
-                             <small class="text-muted">Web Development.</small>                               
-                         </p>
-                     </div> 
-                     
-                     <!-- service 6 -->
-                      <div class="card card-body shadow-sm">
-                         <i class="fas fa-server"></i>
-                         <h2 class="card-title">Database</h2>
-                         <p class="card-text">
-                             <small class="text-muted">Development</small>                               
-                         </p>
-                     </div> 
-                     
-                     <!-- service 7 -->
-                      <div class="card card-body shadow-sm">
-                         <i class="fas fa-shopping-cart"></i>
-                         <h2 class="card-title">Ecommerce</h2>
-                         <p class="card-text">
-                             <small class="text-muted">Web Development</small>                               
-                         </p>
-                     </div> 
-                     
-                     <!-- service 8 -->
-                      <div class="card card-body shadow-sm">
-                         <i class="fas fa-mobile"></i>
-                         <h2 class="card-title">App</h2>
-                         <p class="card-text">
-                             <small class="text-muted">Development</small>                               
-                         </p>
-                     </div>                     
-                 </div>
+                    <div class="card card-body">
+                        <i class="fas fa-eye-dropper"></i>
+                        <h2 class="card-title">Logo</h2>
+                        <p class="card-text text-muted">
+                            <small class="text-muted">Design</small>                               
+                        </p>
+                    </div><!-- service 1 END-->  
+                    
+                    <!-- service 2 -->
+                    <div class="card card-body">
+                        <i class="fas fa-igloo"></i>
+                        <h2 class="card-title">Graphic</h2>
+                        <div class="card-text">
+                            <small class="text-muted">Design</small>                               
+                        </div>
+                    </div><!-- service 2 END-->                       
+                    
+                    <!-- service 3 -->
+                    <div class="card card-body">
+                        <i class="fas fa-layer-group"></i>
+                        <h2 class="card-title">UI / UX Design</h2>
+                        <p class="card-text">
+                            <small class="text-muted">Design</small>                               
+                        </p>
+                    </div><!-- service 3 END-->      
+                    
+                    <!-- service 4 -->
+                    <div class="card card-body">
+                        <i class="fas fa-laptop-code"></i>
+                        <h2 class="card-title">Custom</h2>
+                        <p class="card-text">
+                            <small class="text-muted">Web Development</small>                               
+                        </p>
+                    </div><!-- service 4 END-->     
+                    
+                    <!-- service 5 -->
+                    <div class="card card-body">
+                        <i class="fab fa-wordpress-simple"></i>
+                        <h2 class="card-title">CMS</h2>
+                        <p class="card-text">
+                            <small class="text-muted">Web Development.</small>                               
+                        </p>
+                    </div><!-- service 5 END-->  
+                    
+                    <!-- service 6 -->
+                    <div class="card card-body">
+                        <i class="fas fa-server"></i>
+                        <h2 class="card-title">Database</h2>
+                        <p class="card-text">
+                            <small class="text-muted">Development</small>                               
+                        </p>
+                    </div><!-- service 6 END--> 
+                    
+                    <!-- service 7 -->
+                    <div class="card card-body">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h2 class="card-title">Ecommerce</h2>
+                        <p class="card-text">
+                            <small class="text-muted">Web Development</small>                               
+                        </p>
+                    </div><!-- service 7 END-->    
+
+                </div>
+                <!-- owl carousel container END-->
             </div>
          </section>       
          <!-- ================================== Services END ============================= -->
@@ -437,11 +508,13 @@
         <!-- ================================== Testimonials ============================== -->
         <section class="testimonials" id="testimonials">
             <div class="container">
+
+                <!-- heading  -->
                  <h1 class="animated">Testimonials</h1>  
+                 <!-- heading END-->
+
                  <!-- owl carousel container -->
                  <div class="owl-carousel owl-theme">  
-
-                    <!-- EDIT: just add/remove card div  -->
                     
                     <!-- client 1 -->
                     <div class="card card-body shadow-sm">
@@ -453,7 +526,7 @@
                         <p class="card-text">
                             <small class="text-muted">Co-Founder of XYZ</small>                            
                         </p>                    
-                    </div>
+                    </div><!-- client 1 END-->  
                     
                     <!-- client 2 -->
                     <div class="card card-body shadow-sm">
@@ -465,7 +538,7 @@
                         <p class="card-text">
                             <small class="text-muted">Project Managar at XYZ</small>                            
                         </p>                    
-                    </div>
+                    </div><!-- client 2 END-->  
                     
                     <!-- client 3 -->
                     <div class="card card-body shadow-sm">
@@ -477,7 +550,7 @@
                         <p class="card-text">
                             <small class="text-muted">Founder of XYZ</small>
                         </p>                    
-                    </div>
+                    </div><!-- client 3 END-->  
                     
                     <!-- client 4 -->
                     <div class="card card-body shadow-sm">
@@ -489,7 +562,7 @@
                         <p class="card-text">
                             <small class="text-muted">Founder of XYZ</small>
                         </p>                  
-                    </div> 
+                    </div><!-- client 4 END-->  
                     
                     <!-- client 5 -->
                     <div class="card card-body shadow-sm">
@@ -501,7 +574,7 @@
                         <p class="card-text">
                             <small class="text-muted">Founder of XYZ</small>
                         </p>                  
-                    </div>   
+                    </div><!-- client 5 END-->    
                     
                     <!-- client 6 -->
                     <div class="card card-body shadow-sm">
@@ -509,11 +582,11 @@
                         <p class="card-text">
                             <span class="rightquote">&#8220;</span> Some quick example text to build on the card title and make up the bulk of the card's content. <span class="leftquote">&#8221;</span>
                         </p>
-                        <h3 class="card-title">Jhone Doe</h3>   
+                        <h2 class="card-title">Jhone Doe</h2>   
                         <p class="card-text">
                             <small class="text-muted">Founder of XYZ</small>
                         </p>                 
-                    </div>
+                    </div><!-- client 6 END-->  
                     
                     <!-- client 7 -->
                     <div class="card card-body shadow-sm">
@@ -521,53 +594,32 @@
                         <p class="card-text">
                             <span class="rightquote">&#8220;</span> Some quick example text to build on the card title and make up the bulk of the card's content.<span class="leftquote">&#8221;</span>
                         </p>
-                        <h2 class="card-title">Sagar Rai</h2>   
+                        <h2 class="card-title">Victor Loda</h2>   
                         <p class="card-text">
                             <small class="text-muted">Founder of XYZ</small>
                         </p>                   
-                    </div>
-                    
-                    <!-- client 8 -->
-                    <div class="card card-body shadow-sm">
-                        <img src="./img/client-8.jpg" class="card-img-top rounded-circle">
-                        <p class="card-text">
-                            <span class="rightquote">&#8220;</span> Some quick example text to build on the card title and make up the bulk of the card's content. <span class="leftquote">&#8221;</span>
-                        </p>
-                        <h2 class="card-title">Emily Blunt</h2>   
-                        <p class="card-text">
-                            <small class="text-muted">Founder of XYZ</small>
-                        </p>                   
-                    </div>
-                    
-                    <!-- client 9 -->
-                    <div class="card card-body shadow-sm">
-                        <img src="./img/client-9.jpg" class="card-img-top rounded-circle">
-                        <p class="card-text">
-                            <span class="rightquote">&#8220;</span> Some quick example text to build on the card title and make up the bulk of the card's content. <span class="leftquote">&#8221;</span>
-                        </p>
-                        <h2 class="card-title">Sagar Rai</h2>   
-                        <p class="card-text">
-                            <small class="text-muted">Founder of XYZ</small>
-                        </p>                   
-                    </div>                    
-                 </div>
+                    </div><!-- client 7 END-->  
+                </div>
+                <!-- owl carousel container END-->
             </div>
          </section>       
          <!-- ================================== Testimonials END ========================= -->
 
-        <!-- ================================== Blog ====================================== -->
+        <!-- ======================================== Blog ================================ -->
         <section class="blog" id="blog">
             <div class="container">
-                 <h1 class="animated">My Blog</h1>  
+
+                <!-- heading  -->
+                 <h1 class="animated">My Blog</h1>                   
+                <!-- heading  END-->
+
                  <!-- owl carousel container -->
                  <div class="owl-carousel owl-theme">  
-
-                    <!-- EDIT: just add/remove card div  -->
                     
                     <!-- Blog Post 1 -->
                     <div class="card shadow-sm">
                         <div class="img-wrapper">
-                            <img src="./img/blog-post-1.jpg" class="card-img-top">
+                            <img src="./img/blog-post-1.jpg" alt="Blog Image" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
@@ -583,12 +635,12 @@
                                 <small class="text-muted float-right">5 min read </small>
                             </p>
                         </div>
-                    </div>
+                    </div><!-- Blog Post 1 END-->
                     
                     <!-- Blog Post 2 -->
                     <div class="card shadow-sm">
                         <div class="img-wrapper">
-                            <img src="./img/blog-post-2.jpg" class="card-img-top">
+                            <img src="./img/blog-post-2.jpg" alt="Blog Image" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
@@ -604,12 +656,12 @@
                                 <small class="text-muted float-right">15 min read</small>
                             </p>
                         </div>
-                    </div>
+                    </div><!-- Blog Post 2 END-->
                     
                     <!-- Blog Post 3 -->
                     <div class="card shadow-sm">
                         <div class="img-wrapper">
-                            <img src="./img/blog-post-3.jpg" class="card-img-top">
+                            <img src="./img/blog-post-3.jpg" alt="Blog Image" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
@@ -625,12 +677,12 @@
                                 <small class="text-muted float-right">8 min read</small>
                             </p>
                         </div>
-                    </div>
+                    </div><!-- Blog Post 3 END-->
                     
                     <!-- Blog Post 4 -->
                     <div class="card shadow-sm">
                         <div class="img-wrapper">
-                            <img src="./img/blog-post-4.jpg" class="card-img-top">
+                            <img src="./img/blog-post-4.jpg" alt="Blog Image" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
@@ -646,12 +698,12 @@
                                 <small class="text-muted float-right">11 min read</small>
                             </p>
                         </div>
-                    </div>
+                    </div><!-- Blog Post 4 END-->
                     
                     <!-- Blog Post 5 -->
                     <div class="card shadow-sm">
                         <div class="img-wrapper">
-                            <img src="./img/blog-post-5.jpg" class="card-img-top">
+                            <img src="./img/blog-post-5.jpg" alt="Blog Image" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
@@ -667,12 +719,12 @@
                                 <small class="text-muted float-right">25 min read</small>
                             </p>
                         </div>
-                    </div>
+                    </div><!-- Blog Post 5 END-->
                     
                     <!-- Blog Post 6 -->
                     <div class="card shadow-sm">
                         <div class="img-wrapper">
-                            <img src="./img/blog-post-6.jpg" class="card-img-top">
+                            <img src="./img/blog-post-6.jpg" alt="Blog Image" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
@@ -688,12 +740,12 @@
                                 <small class="text-muted float-right">17 min read</small>
                             </p>
                         </div>
-                    </div>
+                    </div><!-- Blog Post 6 END-->
                     
                     <!-- Blog Post 7 -->
                     <div class="card shadow-sm">
                         <div class="img-wrapper">
-                            <img src="./img/blog-post-7.jpg" class="card-img-top">
+                            <img src="./img/blog-post-7.jpg" alt="Blog Image" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h2 class="card-title">
@@ -709,50 +761,9 @@
                                 <small class="text-muted float-right">6 min read</small>
                             </p>
                         </div>
-                    </div>
-                    
-                    <!-- Blog Post 8 -->
-                    <div class="card shadow-sm">
-                        <div class="img-wrapper">
-                            <img src="./img/blog-post-8.jpg" class="card-img-top">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                <a href="#" class="stretched-link">
-                                    All the python you need to know before starting with Django
-                                </a>
-                            </h2>
-                            <p class="card-text">
-                                Learning something new is hard. Learning to code can be pretty daunting but you can.....
-                            </p>
-                            <p class="card-text clearfix">
-                                <small class="text-muted float-left">Jun 11 2020</small>
-                                <small class="text-muted float-right">8 min read</small>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Blog Post 9 -->
-                    <div class="card shadow-sm">
-                        <div class="img-wrapper">
-                            <img src="./img/blog-post-9.jpg" class="card-img-top">
-                        </div>
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                <a href="#" class="stretched-link">
-                                    6 steps to speed up your image heavy website
-                                </a>
-                            </h2>
-                            <p class="card-text">
-                                Learning something new is hard. Learning to code can be pretty daunting but you can.....
-                            </p>
-                            <p class="card-text clearfix">
-                                <small class="text-muted float-left">Jun 11 2020</small>
-                                <small class="text-muted float-right">9 min read</small>
-                            </p>
-                        </div>
-                    </div>                  
+                    </div><!-- Blog Post 7 END-->
                  </div>
+                 <!-- owl carousel container END-->
             </div>
          </section>       
          <!-- ================================== Blog END ================================= -->
@@ -827,12 +838,20 @@
         <!-- ================================== Footer  =================================== -->
         <footer class="footer">
             <small class="text-muted">
-              marklopez 2020 <i class="fas fa-copyright text-secondary"></i>
+                <i class="fas fa-copyright text-secondary"></i> marklopez 2020 | All Right Reserved
             </small> 
         </footer>
         <!-- ================================== Footer END ================================ -->
-       
-        <script src="./js/bundle.js" async defer></script>
-        <!-- <script src="./js/mixitup-min.js" async defer></script> -->
+
+        <!-- 
+            bootstrap.min.js, 
+            jquery.min.js, 
+            popper.js, 
+            owl-carousel-min.js, 
+            magnific-popup-min.js, 
+            mixitup-min.js, 
+            main.js 
+            (bundle into one bundle.js file) -->
+        <script src="./js/bundle.js"></script>
     </body>
 </html>

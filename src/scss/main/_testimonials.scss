@@ -11,6 +11,7 @@
         .owl-dot span {
             width: 30px;
             height: 20px;
+            transition: all 0.5s linear;
             //small screen (from 992px to below)
             @media  only screen and (max-width: 992px) {
                 width: 10px;
@@ -29,6 +30,12 @@
                 height: 10px;
             }
         }
+
+        //owl-dot:focus
+        .owl-dot:focus {
+            outline: 0;
+        }
+        
     }
 
     //h1

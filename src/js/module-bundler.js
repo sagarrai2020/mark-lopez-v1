@@ -23,6 +23,9 @@
         //import favicon image
         import '../img/favicon/favicon-16x16.png';
 
+        //import logo png
+        import '../img/logo/logo.png';
+
         //import portfolio section item images
         import '../img/portfolio/portfolio-item-1.jpg';
         import '../img/portfolio/portfolio-item-2.jpg';
@@ -42,8 +45,8 @@
         import '../img/testimonials/client-5.jpg';
         import '../img/testimonials/client-6.jpg';
         import '../img/testimonials/client-7.jpg';
-        import '../img/testimonials/client-8.jpg';
-        import '../img/testimonials/client-9.jpg';
+        // import '../img/testimonials/client-8.jpg';
+        // import '../img/testimonials/client-9.jpg';
 
         //import blog section images
         import '../img/blog/blog-post-1.jpg';
@@ -53,8 +56,8 @@
         import '../img/blog/blog-post-5.jpg';
         import '../img/blog/blog-post-6.jpg';
         import '../img/blog/blog-post-7.jpg';
-        import '../img/blog/blog-post-8.jpg';
-        import '../img/blog/blog-post-9.jpg';
+        // import '../img/blog/blog-post-8.jpg';
+        // import '../img/blog/blog-post-9.jpg';
 
 
 

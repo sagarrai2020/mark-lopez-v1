@@ -32,11 +32,11 @@
 *       01. IMPORTS Jquery Plugins                                                               *
 *------------------------------------------------------------------------------------------------*/
 
-            //for portfolio section
+            //for PORTFOLIO section
             import mixitup from 'mixitup';
             import "magnific-popup";
 
-            //for service/testimonials/blog section
+            //for MY SERVICES, TESTIMONIALS and BLOG section
             import 'owl.carousel';
 
 
@@ -46,10 +46,10 @@
             $(window).on( 'load', function(){
                             
                 //hide preloader icon
-                $(".preloader .preloader-icon").fadeOut("slow", function(){
+                // $(".preloader .preloader-icon").fadeOut("slow", function(){
 
                     // slide left preloader div after and reveal header and home contents
-                    $(".preloader").addClass("preloader-animate slideOutLeft fast").one("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function() { 
+                    // $(".preloader").addClass("preloader-animate slideOutLeft fast").one("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function() { 
 
                         //==== home intro animation ======
                         $("header").addClass(" fadeIn slower");
@@ -58,8 +58,8 @@
                         $(".home a").addClass("slideInUp");
                         $(".home .home-pic").addClass("slideInUp slower");
                         //============= END =========================
-                    });
-                });
+                    // });
+                // });
 
             }); // $(window).on end
             
@@ -68,7 +68,7 @@
             $(document).ready(function(){
 
                 // IMPORTANT - always set scroll postion top to "0" whenever page refress to work with "scroll reveal contents" later
-                $(this).scrollTop(0); 
+                // $(this).scrollTop(0); 
 
                 /*------------------------------------------------------------------------------------------------------------------------------------------------*
                 *   03. scroll spy  (Bootstrap's scroll spy, it will add "active" class to the nav-link when scroll position rich to it's related id element)                                      *
@@ -124,7 +124,7 @@
             
                                 //Burger icon open/close
                                 function burgerIconToggle() {
-                                    $(".burger-menu-icon").toggleClass("active-burger-menu-icon");
+                                    $(".burger-line").toggleClass("active-burger-line");
                                 }
                     
                                 //Navigation menu slide in/out
@@ -257,7 +257,7 @@
              
 
         /*---------------------------------------------------------------------------------------------------------------------------  *
-         *      08. Portfolio                                                                                                            *
+         *      08. Portfolio                                                                                                          *
          *----------------------------------------------------------------------------------------------------------------------------  */
                             var config = $('.portfolio-items');
                             var mixer = mixitup(config);
@@ -292,13 +292,14 @@
 
                             //function owl carousel for big screens
                             function startCarouselAutoPlay() {        
-                                $(".owl-carousel").owlCarousel({ 
+                                $(".owl-carousel").owlCarousel({                                    
                                     autoplay: true,
                                     loop: true,
                                     autoplayHoverPause: true,
                                     smartSpeed: 400,
                                     slideTransition: "linear",
                                     autoplayTimeout: 5000,
+                                    
                                     responsive: {
                                         0: {
                                             items:1
@@ -316,8 +317,9 @@
                             //function owl carousel for big screens
                             function stoptCarouselAutoPlay() {          
                                 $(".owl-carousel").owlCarousel({ 
-                                    autoplay: false, // if you want items to slide automatically, set this to true. 
-                                    loop: true,                               
+                                    autoplay: false, // if you want items to slide automatically on mobile device, set this to true. 
+                                    loop: true,    
+                                    autoplayHoverPause: true,                           
                                     responsive: {
                                         0: {
                                             items:1
@@ -327,7 +329,6 @@
                                         },
                                     },
                                 })
-
                             }
 
 
@@ -378,7 +379,7 @@
 
                                 ////server response
                                 $("#submition-status").addClass("form-submitted slideInRight");
-                                $("#server-response").text("hehehehehe");
+                                $("#server-response").text("Thank you");
 
 
 

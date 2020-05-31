@@ -1,25 +1,18 @@
 header {
-    //header bg-color transition on page scroll
+    //header background color transition on page scroll
     transition: 0.5s ease-out;  
 
-    //container-inner
-    .container-inner {
+    //flex-container
+    .flex-container {
         height: 60px;
 
-        //logo-container
+        //------------------------ LOGO -----------------------------//
         .logo-container {
-            font-weight: 400;
-            text-transform: uppercase;
-            color: $primary;
             margin-right: auto; //important for ie
-                //logo-container span::after
-                span:first-child {
-                    color: $secondary;
-                    }
-
         }
+        //------------------------ Logo END -----------------------------// 
 
-        // Hambergur menu icon container
+        //------------------------ Mobile Menu Icon ----------------------//  
         .burger-container {
             position: relative;
             cursor: pointer; 
@@ -34,7 +27,7 @@ header {
             }
 
             // burger menu line
-            .burger-menu-icon {
+            .burger-line {
                 // display: block;
                 position: relative;
                 background: #000;
@@ -90,14 +83,12 @@ header {
                 @keyframes closedBtm {
                     0% { transform: translateY(5px) rotate(0deg);  }
                     50% { transform: translateY(0px) rotate(0deg);  }
-                    100% { transform: translateY(0px) rotate(90deg);  }
-                    
+                    100% { transform: translateY(0px) rotate(90deg);  }                   
                 }
-
             }
 
             // active-burger-menu-icon
-            .active-burger-menu-icon {
+            .active-burger-line {
                 background: #000;
                 //middle line
                 animation: openMid 0.5s forwards;
@@ -113,38 +104,36 @@ header {
                 &::after {
                     background: #000;
                     // bottom line;
-                    animation: openBtm 0.5s forwards;
-                    
+                    animation: openBtm 0.5s forwards;                   
                 }
                 
                 //make animation top line
                 @keyframes openTop {
                     0% { transform: translateY(-5px) rotate(0deg);  }
                     50% { transform: translateY(0px) rotate(0deg);  }
-                    100% { transform: translateY(0px) rotate(90deg);  }
-                    
+                    100% { transform: translateY(0px) rotate(90deg);  }                   
                 }
                 
                 //make animation middle line
                 @keyframes openMid {
                     50% { transform: rotate(0deg);  }
-                    100% { transform: rotate(45deg);  }
-                    
+                    100% { transform: rotate(45deg);  }                    
                 }
                 
                 //make animation buttom line
                 @keyframes openBtm {
                     0% { transform: translateY(5px) rotate(0deg);  }
                     50% { transform: translateY(0px) rotate(0deg);  }
-                    100% { transform: translateY(0px) rotate(90deg);  }
-                    
+                    100% { transform: translateY(0px) rotate(90deg);  }                   
                 }
 
             }
             
         }
 
-        //logo-container
+        //------------------------ Mobile Menu Icon END--------------------------------//  
+
+        //------------------------ Navbar ---------------------------------------------//  
         .nav-container {
             margin-left: auto;  //important for ie
             //small sreen (from 992px to below)
@@ -227,7 +216,7 @@ header {
 
             }
 
-        }
+        } 
 
         // Small screen active nav container
         .active-nav-container {
@@ -245,5 +234,6 @@ header {
             -webkit-box-shadow: -20px 0px 20px 0px  rgba(0, 0, 0, 0.075);
             box-shadow: -20px 0px 20px 0px  rgba(0, 0, 0, 0.075);  
         }
+        //------------------------ Navbar END---------------------------------------------//
     }
 }
