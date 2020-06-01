@@ -4,6 +4,7 @@
         import "../scss/import.scss";
 
 
+
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------*
 *      02. Javascript files (to create "bundle.scss")                                                                                                                 *
 *--------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -12,6 +13,8 @@
         import "bootstrap";
         //import main jquery file
         import "./main/main";
+
+        
 
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------*
@@ -45,19 +48,11 @@
         import '../img/testimonials/client-5.jpg';
         import '../img/testimonials/client-6.jpg';
         import '../img/testimonials/client-7.jpg';
-        // import '../img/testimonials/client-8.jpg';
-        // import '../img/testimonials/client-9.jpg';
-
+        
         //import blog section images
         import '../img/blog/blog-post-1.jpg';
         import '../img/blog/blog-post-2.jpg';
         import '../img/blog/blog-post-3.jpg';
-        // import '../img/blog/blog-post-4.jpg';
-        // import '../img/blog/blog-post-5.jpg';
-        // import '../img/blog/blog-post-6.jpg';
-        // import '../img/blog/blog-post-7.jpg';
-        // import '../img/blog/blog-post-8.jpg';
-        // import '../img/blog/blog-post-9.jpg';
 
 
 

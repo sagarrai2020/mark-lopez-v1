@@ -1,5 +1,5 @@
 .experience{
-    padding: 100px 0 50px 0;
+    padding: 100px 0 60px 0;
     background: linear-gradient(90deg, $gray-200, #fff);
 
     //h1
@@ -17,130 +17,63 @@
         margin-top: 1rem;
         line-height: 2rem;
     }
+    
 
-    //ul
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        // text-align: left;
-        // background: yellow;
+    // ------ ul ---------------------------------------------
 
-        //ul::before 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 2px;
-            left: 0;
-            width: 0px;
-            height: 85%;  
-        }
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
 
-        //li
-        li {
-           margin: 0px 20px 60px 50px;
-           position: relative;
+                    //ul::before 
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0px;
+                        height: 100%;  
+                        border: 1px dashed $primary; 
+                    }
 
-            //li span
-            span {
-                position: absolute;
-                top: 2px;
-                left: -50px;
-                width: 0px;
-                height: 85%;  
-                background: $purple; 
-                //span::before, span::after
-                &::before, &::after {
-                    content: '';
-                    width: 15px;
-                    height: 15px;   
-                    position: absolute;
-                    border-radius: 50%;
-                    left: -7px; 
-                    background: $white;
+                    //li
+                    li {
+                    margin: 0px 20px 60px 50px;
+                    position: relative;
+
+                        //li span
+                        span {
+                            position: absolute;
+                            top: -10px;
+                            left: -50px;
+                            width: 0px;
+                            height: 100%;  
+                            border: 1px solid $primary;   
+                            //span::before, span::after
+                            &::before, &::after {
+                                content: '';
+                                width: 15px;
+                                height: 15px;   
+                                position: absolute;
+                                border-radius: 50%;
+                                left: -7px; 
+                                background: $white;
+                                border: 2px solid $primary;  
+                            }
+
+                            //span::before
+                            &::before {
+                                top: -2px;
+                            }
+
+                            //span::after
+                            &::after {
+                                top: 100%;
+                            }
+                        }
+                    }                
                 }
-
-                //span::before
-                &::before {
-                    top: -2px;
-                }
-
-                //span::after
-                &::after {
-                    top: 100%;
-                }
-            }
-
-            //duration
-            .duration {
-                color: $purple;
-            }
-
-            //company
-            .company {
-                font-weight: 600;;
-            }
-        }
-        
-    }
-
-    //colum left
-    .col-left {
-
-        //h2
-        h2 {
-            color: $info;
-        }
-
-        //small
-        .company-name {
-            text-transform: uppercase;
-        }
-
-        //ul
-        ul {
-            //ul::before 
-            &::before {
-                border: 1px dashed $info;   
-
-            }
-
-            //li span
-            span {
-                border: 1px solid $info;    
-                //span::before, span::after
-                &::before, &::after {
-                    border: 2px solid $info;  
-                }
-            }       
-        }
-    }
-
-    //colum right
-    .col-right {
-
-        //h2
-        h2 {
-            color: $purple;
-        }
-
-        //ul
-        ul {
-            //ul::before 
-            &::before {
-                border: 1px dashed $purple;   
-
-            }
-
-            //li span
-            span {
-                border: 1px solid $purple;    
-                //span::before, span::after
-                &::before, &::after {
-                    border: 2px solid $purple; 
-                }
-            }       
-        }
-    }
+ 
 }

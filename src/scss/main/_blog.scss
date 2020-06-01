@@ -13,38 +13,38 @@
         }
     }
              
-    //card
-    .card {
-        margin-bottom:1rem;
-        background: $white;
-        cursor: pointer;
+    // ------- card -----------------------------------------------
+                .card {
+                    margin-bottom:1rem;
+                    background: $white;
+                    cursor: pointer;
 
-        //card:hover
-        &:hover img{
-            transform: scale(1.2);
-        }
+                    //card:hover
+                    &:hover img{
+                        transform: scale(1.2);
+                    }
 
-        //img-wrapper
-        .img-wrapper {
-            overflow: hidden;
+                    //img-wrapper
+                    .img-wrapper {
+                        overflow: hidden;
 
-            //img
-            img {
-                transition: 0.5s ease-out;  
-            }           
-        }
+                        //img
+                        img {
+                            transition: 0.5s ease-out;  
+                        }           
+                    }
 
-        //h2
-        .card-title {
-            font-size: 1rem;
-            line-height: 1.5rem;
-            color: $dark;
-        }
+                    //h2
+                    .card-title {
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        color: $dark;
+                    }
 
-        //card-text
-        .card-text {
-            font-size: $font-size-sm;
-        }                 
-    }
+                    //card-text
+                    .card-text {
+                        font-size: $font-size-sm;
+                    }                 
+                }
 }
 
