@@ -82,7 +82,8 @@
                 .home-pic {
                     width: 50%;
                     height: 100vh;
-                    background: url("../img/home/home-pic-desktops.png") no-repeat;
+                    background: url("../img/home/home-pic-desktops.png");
+                    background-repeat: no-repeat;
                     background-position: right bottom;
                     background-size: contain;
 
@@ -95,13 +96,17 @@
 
                     // small screen (from 768px to below)
                     @media (max-width: 768px) {
-                        background: url("../img/home/home-pic-desktops.png") no-repeat center bottom;
+                        background: url("../img/home/home-pic-tablets.png");
+                        background-repeat: no-repeat;
+                        background-position: center bottom;
                         background-size: contain;
                     }
 
                     // small screen (from 576px to below)
                     @media (max-width: 576px) {
-                        background: url("../img/home/home-pic-desktops.png") no-repeat center bottom;
+                        background: url("../img/home/home-pic-mobiles.png");
+                        background-repeat: no-repeat;
+                        background-position: center bottom;
                         background-size: contain;
                         height: 50vh; 
                     }

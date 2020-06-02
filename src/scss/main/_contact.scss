@@ -4,10 +4,10 @@
     
     //h1
     h1 {
-        color: $info;
+        color: $primary;
         //h1::after
         &::after {
-            background: $info;
+            background: $primary;
         }
     }
     
@@ -41,7 +41,7 @@
                         //social icon
                         .social i {
                             font-size: 2rem;
-                            color: $info;
+                            color: $primary;
                             cursor: pointer;
                             transition: all 0.3s linear;
 

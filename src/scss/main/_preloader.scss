@@ -31,12 +31,12 @@
 
         // == icon before
         &:before {
-            box-shadow: 15px 15px $dark, -15px -15px $dark;
+            box-shadow: 15px 15px $white, -15px -15px $white;
         }
 
         // == after
         &:after {
-            box-shadow: 15px 15px $dark, -15px -15px $dark;
+            box-shadow: 15px 15px $white, -15px -15px $white;
             transform: translate(-50%, -50%) rotate(90deg);
         }
 

@@ -34,7 +34,7 @@ header {
                         position: relative;
                         background: #000;
                         height: 2px;
-                        width: 15px;
+                        width: 20px;
                         border-radius: 4px;
                         // initial animation setup closed state
                         animation: closedMid 0.5s backwards;
@@ -52,7 +52,7 @@ header {
 
                         // before
                         &::before {
-                            transform: translateY(-5px);
+                            transform: translateY(-7px);
                             //initial animation setup closed state
                             animation: closedTop 0.5s backwards;
                             animation-direction: reverse;         
@@ -60,7 +60,7 @@ header {
 
                         // after
                         &::after {
-                            transform: translateY(5px);
+                            transform: translateY(7px);
                             //initial animation setup closed state
                             animation: closedTop 0.5s backwards;
                             animation-direction: reverse;                       
@@ -180,6 +180,7 @@ header {
                                 //small screen (from 992px to below)
                                 @media  only screen and (max-width: 992px) {  
                                     padding: 0;
+                                    font-weight: 600;
                                 }
                                 //nav link hover color
                                 &:hover {
