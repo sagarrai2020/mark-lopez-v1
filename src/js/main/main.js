@@ -31,9 +31,9 @@ import 'owl.carousel';
 
 03. Change Header background on scroll up/down
 
-04. Smooth scroll on click
+04. Smooth scroll on click links
 
-05. Navbar slider (Small Screen)
+05. Navbar slider (SMALL SCREEN)
 
 06. Scroll reveal contents 
 
@@ -86,7 +86,7 @@ import 'owl.carousel';
 
 
     //--------------------------------------------------------------------------------------------------
-    //  03. change Header background on scroll up/down
+    //  03. Change Header background on scroll up/down
     //---------------------------------------------------------------------------------------------------
             TOKLA.changeHeaderBG = function(){                                                           
                 var header = $('header');
@@ -99,7 +99,7 @@ import 'owl.carousel';
 
 
     //--------------------------------------------------------------------------------------------------
-    //  04. Smooth scroll on click 
+    //  04. Smooth scroll on click links
     //---------------------------------------------------------------------------------------------------
             TOKLA.smoothScroll = function(){
                 $("a").on('click', function(event) {
@@ -122,7 +122,7 @@ import 'owl.carousel';
 
 
     //--------------------------------------------------------------------------------------------------
-    //  05. Navbar slider
+    //  05. Navbar slider (SMALL SCREEN)
     //---------------------------------------------------------------------------------------------------
             TOKLA.navbarSlider = function(){               
                 $(".burger-container").on("click", function () {                    
@@ -370,60 +370,48 @@ import 'owl.carousel';
                     }
                 });
 
+
+                //form
+                var form = $('.contact-form');
+
                 //send message (Ajax)
-                $(".contact-form").submit(function (e) { 
+                $(form).on('submit', function(e) {
                     //disabled refreshing page on submit
                     e.preventDefault();
                     //disabled send button
                     $("#send-btn").attr("disabled", true);
                     //fade a little contact form
-                    $(".contact-form").css("opacity", "0.5");
+                    $(form).css("opacity", "0.5");
 
                     //form data
-                    var formData = $(this).serialize();
-
-                    
-
-                    
-
-                        // $("#submition-status").addClass("form-submitted ");
-                        // $("#server-response").text("hehehehehe");
-
-                    // $(".contact-form").addClass("flipOutX");
-                    
-
-                    ////server response
-                    $("#submition-status").addClass("form-submitted slideInRight");
-                    $("#server-response").text("Thank you");
-
-
+                    var formData = $(form).serialize();
 
                     // Submit the form using AJAX.                                   
-                    // $.ajax({
-                    //     type: 'POST',
-                    //     url: $(form).attr('action'),
-                    //     data: formData
-                    // })
+                    $.ajax({
+                        type: 'POST',
+                        url: $(form).attr('action'),
+                        data: formData
+                    })
                     //success
-                    // .done(function(response) {
-
-                    //     // Set the message text.
-                    //     $("#submition-status").text(response);
-
-                    //     // Clear the form.
-                    //     $('#name').val('');
-                    //     $('#email').val('');
-                    //     $('#message').val('');
-                    // })
+                    .done(function(response) {
+                        // Set the success message text.
+                        $("#submition-status").addClass("success slideInRight");
+                        $("#server-response").text(response);
+                        // Clear the form.
+                        $('#name').val('');
+                        $('#email').val('');
+                        $('#message').val('');
+                    })
                      //error   
-                    // .fail(function(data) {
-                    //     // Set the message text.
-                    //     if (data.responseText !== '') {
-                    //         $("#submition-status").text(data.responseText);
-                    //     } else {
-                    //         $("#submition-status").text('Oops! An error occured and your message could not be sent.');
-                    //     }
-                    // });
+                    .fail(function(data) {
+                        // Set the success message text.
+                        $("#submition-status").addClass("error slideInRight");
+                        if (data.responseText !== '') {
+                            $("#server-response").text(data.responseText);
+                        } else {
+                            $("#server-response").text('Oops! An error occured and your message could not be sent.');
+                        }
+                    });
                    
                 });                                   
             }

@@ -24,7 +24,7 @@
         $recipient = "sagarrai2020@outlook.com";
 
         // Set the email subject.
-        $subject = "New contact from ANAS";
+        $subject = "Contact form test from mark lopez";
 
         // Build the email content.
         $email_content = "Name: $name\n";
